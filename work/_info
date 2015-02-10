@@ -1,0 +1,245 @@
+m255
+K3
+z0
+13
+cModel Technology
+Z0 dQ:\MS6.001\examples
+T_opt
+VaS03ogk>c0GGPLXmlVZbL3
+04 10 4 work add4bit_tb fast 0
+=1-a0d3c10da740-54d4ea19-4b-17c4
+Z1 o-quiet -auto_acc_if_foreign -work work
+tExplicit 1
+OE;O;6.3;37
+R0
+T_opt1
+!s110 1423528273
+VNKAVXBDgSK0bFYUnDWe753
+04 3 4 work Mul fast 0
+=1-a0d3c10bf464-54d9514e-2cb-16dc
+R1
+n@_opt1
+Z2 OE;O;10.3c;59
+R0
+T_opt2
+!s110 1423260452
+V3hidel`_U]b`ccU`mGJKe3
+04 3 4 work PWM fast 0
+=1-a0d3c10fdb96-54d53b22-29b-1a30
+R1
+n@_opt2
+R2
+R0
+vadd4bit
+Z3 !s110 1423527623
+!i10b 1
+!s100 QcTQM`OR[UV`Z]z9jQcGJ1
+IWVN40G7o4F<TM>P3HF<m;0
+Z4 V`JN@9S9cnhjKRR_L]QIcM3
+Z5 dI:/ECE551_Spring2015
+Z6 w1423240643
+Z7 8I:/ECE551_Spring2015/add4bit.v
+Z8 FI:/ECE551_Spring2015/add4bit.v
+L0 1
+Z9 OE;L;10.3c;59
+r1
+!s85 0
+31
+Z10 !s108 1423527622.801000
+Z11 !s107 I:/ECE551_Spring2015/add4bit.v|
+Z12 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551_Spring2015/add4bit.v|
+!i113 0
+Z13 o-work work -L mtiAvm
+Z14 tCoverOpt 2
+vadd4bit_tb
+R3
+!i10b 1
+!s100 ]A]i81n5YfmEoWg3de7R00
+I?5mC_VFi`jKb=;VZ5M8<z3
+R4
+R5
+R6
+R7
+R8
+L0 11
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vadd8bit
+Z15 !s110 1423527621
+!i10b 1
+!s100 hghX7lO7FY1nWKfF21_R]3
+I1A@DHN2]@T^4mTT26[7LV1
+R4
+R5
+Z16 w1422895814
+Z17 8I:/ECE551_Spring2015/FullAdder.v
+Z18 FI:/ECE551_Spring2015/FullAdder.v
+L0 17
+R9
+r1
+!s85 0
+31
+Z19 !s108 1423527620.830000
+Z20 !s107 I:/ECE551_Spring2015/FullAdder.v|
+Z21 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551_Spring2015/FullAdder.v|
+!i113 0
+R13
+R14
+vadd8bit_tb
+Z22 !s110 1423527622
+!i10b 1
+!s100 KP1hWj<[;6mnn0i9?>lc;3
+IK:NomOnmCneb2Ug:@z;>C2
+R4
+R5
+w1423069204
+8I:/ECE551_Spring2015/FA_t.v
+FI:/ECE551_Spring2015/FA_t.v
+L0 2
+R9
+r1
+!s85 0
+31
+!s108 1423527621.657000
+!s107 I:/ECE551_Spring2015/FA_t.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551_Spring2015/FA_t.v|
+!i113 0
+R13
+R14
+vALU
+!s110 1423532211
+!i10b 1
+!s100 WClMi7C;f3ND^2bM3[N@;1
+I6OB7g8KSAAP_m_R>7_>_71
+R4
+R5
+w1423532135
+8I:/ECE551_Spring2015/ALU.v
+FI:/ECE551_Spring2015/ALU.v
+L0 1
+R9
+r1
+!s85 0
+31
+!s108 1423532211.369000
+!s107 I:/ECE551_Spring2015/ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551_Spring2015/ALU.v|
+!i113 0
+R13
+R14
+n@a@l@u
+vFA
+R15
+!i10b 1
+!s100 H<<M[i?6J]EgHQKJ7Z5=a3
+IL>M9AHWh?jYS@[8P0]Sjk1
+R4
+R5
+R16
+R17
+R18
+L0 1
+R9
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 0
+R13
+R14
+n@f@a
+vMul
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 _WBDz02onXWMiA^jE`59l0
+Iz9b;Aki[a<XZbnY>cBKWK2
+R5
+w1423531166
+8I:/ECE551_Spring2015/Mul.v
+FI:/ECE551_Spring2015/Mul.v
+L0 1
+R9
+!s108 1423531168.315000
+!s107 I:/ECE551_Spring2015/Mul.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551_Spring2015/Mul.v|
+!i113 0
+R13
+R14
+n@mul
+vosc
+R22
+!i10b 1
+!s100 jA7<i6=g7Fn932R06MMDR3
+IWOigONdLMnffD>RC0mVnV0
+R4
+R5
+Z23 w1423072543
+Z24 8I:/ECE551_Spring2015/Oscillating.v
+Z25 FI:/ECE551_Spring2015/Oscillating.v
+L0 1
+R9
+r1
+!s85 0
+31
+Z26 !s108 1423527622.090000
+Z27 !s107 I:/ECE551_Spring2015/Oscillating.v|
+Z28 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551_Spring2015/Oscillating.v|
+!i113 0
+R13
+R14
+vosc_tb
+R22
+!i10b 1
+!s100 m;RY[Z2LhEGF0iaX^a8j91
+IEJOYeigh8ek0ad`V3>=_C2
+R4
+R5
+R23
+R24
+R25
+L0 14
+R9
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 0
+R13
+R14
+vPWM
+!s110 1423527626
+!i10b 1
+!s100 eVKCnCSNAQUT_ikF6IZ7h2
+IXWzAQDR201nQZ7LT?Yh6o1
+R4
+R5
+w1423330406
+8I:/ECE551_Spring2015/PWM.v
+FI:/ECE551_Spring2015/PWM.v
+L0 1
+R9
+r1
+!s85 0
+31
+!s108 1423527626.152000
+!s107 I:/ECE551_Spring2015/PWM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551_Spring2015/PWM.v|
+!i113 0
+R13
+R14
+n@p@w@m

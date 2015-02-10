@@ -1,0 +1,118 @@
+m255
+K3
+13
+Z0 cModel Technology
+Z1 dQ:\MS6.001\examples
+T_opt
+Z2 VaS03ogk>c0GGPLXmlVZbL3
+Z3 04 10 4 work add4bit_tb fast 0
+Z4 =1-a0d3c10da740-54d4ea19-4b-17c4
+Z5 o-quiet -auto_acc_if_foreign -work work
+Z6 tExplicit 1
+Z7 OE;O;6.3;37
+T_opt1
+Z8 Vd9QmFVX^1`DD9EN_HoE:20
+Z9 04 7 4 work add4bit fast 0
+Z10 =3-a0d3c10da740-54d4e57f-154-18f4
+R5
+R6
+R7
+T_opt2
+Z11 V5F5nKb`ziTh<:QbM]UJj53
+Z12 04 10 4 work add8bit_tb fast 0
+Z13 =1-a0d3c10fdb8b-54d24aa3-61-f24
+R5
+R6
+R7
+vadd4bit
+Z14 I=9[;I8F45[m<^ZDO5chcU2
+Z15 V[YC@l8`L:k3@>eSN>Bj1c0
+Z16 dI:\ECE551_Spring2015
+Z17 w1423239691
+Z18 8I:/ECE551_Spring2015/add4bit.v
+Z19 FI:/ECE551_Spring2015/add4bit.v
+L0 1
+Z20 OE;L;6.3;37
+r1
+31
+Z21 o-work work -nocovercells -L mtiAvm
+!s85 0
+vadd4bit_tb
+Z22 IYZMLTZLHcH6S4<NenBWHQ2
+Z23 V[5nomzSDzM]SE;XM;8SOS2
+R16
+R17
+R18
+R19
+L0 11
+R20
+r1
+31
+R21
+!s85 0
+vadd8bit
+Z24 IGSdD]0o]Kd:C`:fPGek5J2
+Z25 VbQQMdU4Xk]Z`znQb6a[[J0
+R16
+Z26 w1422895814
+Z27 8I:/ECE551_Spring2015/FullAdder.v
+Z28 FI:/ECE551_Spring2015/FullAdder.v
+L0 17
+R20
+r1
+31
+R21
+!s85 0
+vadd8bit_tb
+Z29 I<AgG8Z70[j2zi`l?;5`ZK2
+Z30 V^I8b7UazLDz4KFLiknY8?2
+R16
+Z31 w1423069204
+Z32 8I:/ECE551_Spring2015/FA_t.v
+Z33 FI:/ECE551_Spring2015/FA_t.v
+L0 2
+R20
+r1
+31
+R21
+!s85 0
+vFA
+Z34 II]SmM8;if6NI8<=SXQ?Wg3
+Z35 VA=^?l^TdCln53;9]G:Cm53
+R16
+R26
+R27
+R28
+L0 1
+R20
+r1
+31
+R21
+n@f@a
+!s85 0
+vosc
+Z36 IlicEkLSOOTb>;V=lK5[lZ1
+Z37 VnEWT=SeG5iMg4nX4fW5V]3
+R16
+Z38 w1423072543
+Z39 8I:/ECE551_Spring2015/Oscillating.v
+Z40 FI:/ECE551_Spring2015/Oscillating.v
+L0 1
+R20
+r1
+31
+R21
+!s85 0
+vosc_tb
+Z41 IJ^6H?iQPF<]6Wm`2VaEj?0
+Z42 VB57WILY^6`]>cM>5j6DC_0
+R16
+R38
+R39
+R40
+L0 14
+R20
+r1
+31
+R21
+!s85 0

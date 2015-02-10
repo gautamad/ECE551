@@ -1,0 +1,8 @@
+module Mul();
+
+wire signed [3:0] a,b;
+wire signed [7:0] c;
+
+assign c = a * b;
+
+endmodule

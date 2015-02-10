@@ -1,0 +1,95 @@
+m255
+K3
+z0
+13
+cModel Technology
+Z0 dQ:\MS6.001\examples
+T_opt
+!s110 1423067626
+VY4mi;MW7=e=RdAm9SXT5G0
+Z1 04 7 4 work add8bit fast 0
+=1-a0d3c10fdb8b-54d249ea-1fe-514
+Z2 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z3 OE;O;10.3c;59
+T_opt1
+VzY6GENkS797hD]M2Z<Mai3
+R1
+=1-a0d3c10bf475-54cfaa97-225-1c20
+R2
+tExplicit 1
+OE;O;6.3;37
+R0
+T_opt2
+!s110 1423067594
+V0JHnZ6^ko@WNZ^LBabUY[0
+04 10 4 work add8bit_tb fast 0
+=3-a0d3c10fdb8b-54d249ca-3a-1e48
+R2
+n@_opt2
+R3
+R0
+vadd8bit
+Z4 !s110 1423067588
+!i10b 1
+!s100 hghX7lO7FY1nWKfF21_R]3
+I1A@DHN2]@T^4mTT26[7LV1
+Z5 V`JN@9S9cnhjKRR_L]QIcM3
+Z6 dI:/ECE551_Spring2015
+Z7 w1422895814
+Z8 8I:/ECE551_Spring2015/FullAdder.v
+Z9 FI:/ECE551_Spring2015/FullAdder.v
+L0 17
+Z10 OE;L;10.3c;59
+r1
+!s85 0
+31
+Z11 !s108 1423067588.702000
+Z12 !s107 I:/ECE551_Spring2015/FullAdder.v|
+Z13 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551_Spring2015/FullAdder.v|
+!i113 0
+Z14 o-work work -L mtiAvm
+Z15 tCoverOpt 2
+vadd8bit_tb
+!s110 1423067589
+!i10b 1
+!s100 0kM<8Fc4dJKiQTPj<OL6@0
+Ikik1nWBoRg>]NW>?IzV?M1
+R5
+R6
+w1423067586
+8I:/ECE551_Spring2015/FA_t.v
+FI:/ECE551_Spring2015/FA_t.v
+L0 2
+R10
+r1
+!s85 0
+31
+!s108 1423067589.154000
+!s107 I:/ECE551_Spring2015/FA_t.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551_Spring2015/FA_t.v|
+!i113 0
+R14
+R15
+vFA
+R4
+!i10b 1
+!s100 H<<M[i?6J]EgHQKJ7Z5=a3
+IL>M9AHWh?jYS@[8P0]Sjk1
+R5
+R6
+R7
+R8
+R9
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+n@f@a
