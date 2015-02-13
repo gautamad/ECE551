@@ -1,0 +1,62 @@
+I:/ECE551~2/FullAdder.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/FullAdder.v
+Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
+-- Compiling module FA
+-- Compiling module add8bit
+
+Top level modules:
+	add8bit
+
+} {} {}} I:/ECE551~2/ALU_tb.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/ALU_tb.v
+Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
+-- Compiling module ALU_tb
+
+Top level modules:
+	ALU_tb
+
+} {} {}} I:/ECE551~2/PWM.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/PWM.v
+Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
+-- Compiling module PWM
+
+Top level modules:
+	PWM
+
+} {} {}} I:/ECE551~2/add4bit.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/add4bit.v
+Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
+-- Compiling module add4bit
+-- Compiling module add4bit_tb
+
+Top level modules:
+	add4bit_tb
+
+} {} {}} I:/ECE551~2/Oscillating.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/Oscillating.v
+Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
+-- Compiling module osc
+-- Compiling module osc_tb
+
+Top level modules:
+	osc_tb
+
+} {} {}} I:/ECE551~2/Mul.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/Mul.v
+Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
+-- Compiling module Mul
+
+Top level modules:
+	Mul
+
+} {} {}} I:/ECE551~2/FA_t.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/FA_t.v
+Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
+-- Compiling module add8bit_tb
+
+Top level modules:
+	add8bit_tb
+
+} {} {}} I:/ECE551~2/ALU.v {2 {vlog -work work -vopt -nocovercells I:/ECE551~2/ALU.v
+Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
+-- Compiling module ALU
+** Warning: I:/ECE551~2/ALU.v(8): Keyword "unsigned" not allowed here in Verilog 2001.
+** Warning: I:/ECE551~2/ALU.v(9): Keyword "unsigned" not allowed here in Verilog 2001.
+
+Top level modules:
+	ALU
+
+} {} {}}
