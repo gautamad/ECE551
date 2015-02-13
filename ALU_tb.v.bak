@@ -18,7 +18,7 @@ module ALU_tb();
 	saturate = 1'b1;
 	mult2 = 1'b0;
 	mult4 = 1'b0;
-	sub = 1'b0;
+	sub = 1'b1;
 	#50
 	src1sel = 3'b000;
 	src0sel = 3'b011;

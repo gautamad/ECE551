@@ -46,7 +46,7 @@ module ALU(Accum, Pcomp, Pterm, Fwd, A2D_res, Error, Intgrl,
 	assign AluOut = src1 + src0;
 	
 	//ALU saturate
-	assign AluOutSat = ((saturate) ? ((AluOut[15]) ? (&(AluOut[14:11] == 1'b0 ? 16'hF800: AluOut)) :
+	assign AluOutSat = ((saturate) ? ((AluOut[15]) ? ((&AluOut[14:11] == 1'b0 ? 16'hF800: AluOut)) :
 			   ((AluOut > 16'h07FF) ? 16'h07FF : AluOut)) : AluOut); // FIXME
 
 	//Multiply Output
