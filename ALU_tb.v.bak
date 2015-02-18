@@ -12,18 +12,18 @@ module ALU_tb();
 	initial begin
 	src1sel = 3'b000;
 	src0sel = 3'b011;
-	Accum = 16'hfffc;
-	Pcomp = 16'hfffd;
-	multiply = 1'b0;
+	Accum = 16'h5fff;
+	Pcomp = 16'h4fff;
+	multiply = 1'b1;
 	saturate = 1'b1;
 	mult2 = 1'b0;
 	mult4 = 1'b0;
-	sub = 1'b1;
+	sub = 1'b0;
 	#50
 	src1sel = 3'b000;
 	src0sel = 3'b011;
-	Accum = 16'h0005;
-	Pcomp = 16'h0001;
+	Accum = 16'h41ff;
+	Pcomp = 16'h0fff;
 	multiply = 1'b1;
 	saturate = 1'b0;
 	mult2 = 1'b0;

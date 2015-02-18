@@ -16,7 +16,7 @@ module ALU(Accum, Pcomp, Pterm, Fwd, A2D_res, Error, Intgrl,
 	
 	wire signed [29:0] MulOut;
 	wire [15:0] src1, src0_initial, src0_mul, src0, AluOut, AluOutSat, MulSat;
-	wire signed [14:0] mulsrc1, mulscr0;
+	wire signed [14:0] mulsrc1, mulsrc0;
 
 	//ALU Src1 data
 	assign src1 = ((src1sel == 3'b000) ? Accum :
@@ -43,7 +43,7 @@ module ALU(Accum, Pcomp, Pterm, Fwd, A2D_res, Error, Intgrl,
 	assign src0 = ((sub) ? (~src0_mul) : src0_mul);
 	
 	//ALU result
-	assign AluOut = src1 + src0;
+	assign AluOut = src1 + src0 + sub;
 	
 	//ALU saturate
 	assign AluOutSat = ((saturate) ? ((AluOut[15]) ? ((&AluOut[14:11] == 1'b0 ? 16'hF800: AluOut)) :
@@ -53,7 +53,8 @@ module ALU(Accum, Pcomp, Pterm, Fwd, A2D_res, Error, Intgrl,
 	assign mulsrc1 = src1[14:0];
 	assign mulsrc0 = src0[14:0];
 	assign MulOut = mulsrc1 * mulsrc0;
-	assign MulSat = ((~MulOut[29] ? ((MulOut[29:26] > 4'b1) ? 16'h3FFF: MulOut) : 16'hC000)); //FIXME
+	assign MulSat = ((~MulOut[29] ? ((MulOut[28:26] > 4'b0) ? 16'h3FFF: MulOut[27:12]) : 
+	                (&MulOut[28:26] == 1'b0 ? 16'hC000 : MulOut[27:12]))); //FIXME
 	
 	//Final ALU Output
 	assign dst = (multiply) ? MulSat : AluOutSat;
