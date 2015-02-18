@@ -727,3 +727,80 @@ restart
 # ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Icomp'.
 # ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Iterm'.
 run
+# Compile of ALU_tb.v was successful.
+restart
+# Refreshing I:\ECE551~2\work.ALU_tb
+# Loading work.ALU_tb
+# ** Warning: (vsim-3017) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Too few port connections. Expected 17, found 10.
+#         Region: /ALU_tb/inst1
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Pterm'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Fwd'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'A2D_res'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Error'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Intgrl'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Icomp'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Iterm'.
+run
+quit -sim
+# Compile of ALU_tb.v was successful.
+vsim -novopt work.ALU_tb
+# vsim -novopt work.ALU_tb 
+# Refreshing I:\ECE551~2\work.ALU_tb
+# Loading work.ALU_tb
+# Loading work.ALU
+# ** Warning: (vsim-3017) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Too few port connections. Expected 17, found 10.
+#         Region: /ALU_tb/inst1
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Pterm'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Fwd'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'A2D_res'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Error'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Intgrl'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Icomp'.
+# ** Warning: (vsim-3722) I:/ECE551~2/ALU_tb.v(11): [TFMPC] - Missing connection for port 'Iterm'.
+add wave \
+{sim:/ALU_tb/src1sel } \
+{sim:/ALU_tb/src0sel } \
+{sim:/ALU_tb/Accum } \
+{sim:/ALU_tb/Pcomp } \
+{sim:/ALU_tb/multiply } \
+{sim:/ALU_tb/saturate } \
+{sim:/ALU_tb/mult2 } \
+{sim:/ALU_tb/mult4 } \
+{sim:/ALU_tb/sub } \
+{sim:/ALU_tb/out } 
+run
+quit -sim
+# Compile of reset_synch.v was successful.
+vsim -novopt work.reset_synch
+# vsim -novopt work.reset_synch 
+# Refreshing I:\ECE551~2\work.reset_synch
+# Loading work.reset_synch
+add wave \
+{sim:/reset_synch/RST_n } \
+{sim:/reset_synch/clk } \
+{sim:/reset_synch/rst_n } \
+{sim:/reset_synch/q0 } 
+force -freeze sim:/reset_synch/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/reset_synch/RST_n 1 0
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/reset_synch/RST_n 0 0
+run
+run
+run
+restart
+force -freeze sim:/reset_synch/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/reset_synch/RST_n 1 0
+run
+run
+run
+run
+run
+force -freeze sim:/reset_synch/RST_n 0 0
+run
+quit -sim

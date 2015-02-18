@@ -95,17 +95,17 @@ n@a@l@u
 vALU_tb
 VE`_QLbcAmOeKZDFMXUl3B3
 r1
-!s85 0
 31
-I2Ng[6]0_[b4;FiFFhL:D40
+Ic<meCD0^kB3:TZejj9e7V2
 R3
-w1424282266
+w1424283237
 8I:/ECE551~2/ALU_tb.v
 FI:/ECE551~2/ALU_tb.v
 L0 1
 R7
 R8
 n@a@l@u_tb
+!s85 0
 vFA
 II]SmM8;if6NI8<=SXQ?Wg3
 VA=^?l^TdCln53;9]G:Cm53
@@ -174,3 +174,16 @@ r1
 R8
 n@p@w@m
 !s85 0
+vreset_synch
+VO@4]53YD:@GnboW@RGiV:3
+r1
+!s85 0
+31
+I9m`Am`n@aYdOPYgBggSCQ0
+R3
+w1424284518
+8I:/ECE551~2/reset_synch.v
+FI:/ECE551~2/reset_synch.v
+L0 1
+R7
+R8

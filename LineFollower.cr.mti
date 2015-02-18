@@ -1,4 +1,18 @@
-I:/ECE551~2/FullAdder.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/FullAdder.v
+I:/ECE551~2/reset_synch.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/reset_synch.v
+Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
+-- Compiling module reset_synch
+
+Top level modules:
+	reset_synch
+
+} {} {}} I:/ECE551~2/ALU_tb.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/ALU_tb.v
+Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
+-- Compiling module ALU_tb
+
+Top level modules:
+	ALU_tb
+
+} {} {}} I:/ECE551~2/FullAdder.v {1 {vlog -work work -vopt -nocovercells I:/ECE551~2/FullAdder.v
 Model Technology ModelSim SE vlog 6.3 Compiler 2007.05 May  4 2007
 -- Compiling module FA
 -- Compiling module add8bit
