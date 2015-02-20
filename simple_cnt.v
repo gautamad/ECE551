@@ -1,8 +1,6 @@
-module simple_cnt(rst_n, clk, LED);
+module simple_cnt(rst_n, clk, count);
 	input rst_n, clk;
-	output [7:0] LED;
-	reg [21:0] count;
-	assign LED = count[21:14];
+	output reg [21:0] count;
 
 	always @(posedge clk, negedge rst_n) begin
 		if(rst_n == 1'b0) begin
