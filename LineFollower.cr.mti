@@ -1,4 +1,12 @@
-I:/ECE551~2/src/add4bit.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/add4bit.v
+I:/ECE551~2/src/motor_driver.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/motor_driver.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module motor_driver
+-- Compiling module moto_driver_tb
+
+Top level modules:
+	moto_driver_tb
+
+} {} {}} I:/ECE551~2/src/add4bit.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/add4bit.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 -- Compiling module add4bit
 -- Compiling module add4bit_tb
@@ -34,14 +42,6 @@ Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 
 Top level modules:
 	osc_tb
-
-} {} {}} I:/ECE551~2/src/PWM.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/PWM.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module PWM
--- Compiling module PWM_tb
-
-Top level modules:
-	PWM_tb
 
 } {} {}} I:/ECE551~2/src/FirstFPGA.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/FirstFPGA.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014

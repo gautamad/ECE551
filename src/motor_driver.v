@@ -15,7 +15,7 @@ module motor_driver(clk, rst_n, lft, rht, fwd_lft, rev_lft, fwd_rht, rev_rht);
 	PWM pwm_rht(.clk(clk), .rst_n(rst_n), .duty(mag_rht), .PWM_sig(PWM_right));
 	
 	assign fwd_lft = lft[10] ? 0 : PWM_left;
-	assign fwd_rht = lft[10] ? PWM_left : 0;         // Optimize here for Area
+	assign rev_lft = lft[10] ? PWM_left : 0;         // Optimize here for Area
 		
 	assign fwd_rht = rht[10] ? 0 : PWM_right;
 	assign rev_rht = rht[10] ? PWM_right : 0;
@@ -36,8 +36,8 @@ motor_driver mtr_drv(.clk(clk), .rst_n(rst_n), .lft(lft), .rht(rht), .fwd_lft(fw
 	#0 clk = 0;
 	   rst_n = 0;
 	#11 rst_n = 1;
-	#2  lft = 1025;
-	    rht = 2047;
+	#2  lft = 512;
+	    rht = 1536;
 	end
 
 	always @(clk)

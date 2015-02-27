@@ -4,19 +4,20 @@ module PWM(clk, rst_n, duty, PWM_sig);
     output reg PWM_sig;
     
     reg [9:0] count;
-    always @(posedge clk) begin
-        if(rst_n == 0) begin
-	   count = 0;
-           PWM_sig =  0;
-	end
-	else if (count <= duty) begin           // Can Optimize here for AREA
-	   PWM_sig = 1;
-	   count = count + 1;
-	end
-	else begin
-	   PWM_sig = 0; 
-	   count = count + 1;
-	end
+ 
+    always @(posedge clk, negedge rst_n) begin
+	if(!rst_n) 
+	    count <= 0;
+	else 
+	    count <= count + 1;
+    end
+    always @(posedge clk, negedge rst_n) begin
+        if(!rst_n)
+           PWM_sig <=  0;
+	else if (count <= duty)
+	   PWM_sig <= 1;
+	else
+	   PWM_sig <= 0;
  end
 endmodule
 	           
@@ -32,7 +33,7 @@ PWM DUT_PWM(.duty(duty), .clk(clk), .rst_n(rst_n), .PWM_sig(PWM_sig));
 	  #0 clk = 0;
 	  #0 rst_n = 0;
 	  #14 rst_n = 1;
-	  #15 duty = 1024; 	
+	  #15 duty = 100; 	
 	end
 	
 	always @(clk)
