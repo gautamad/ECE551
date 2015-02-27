@@ -1,5 +1,6 @@
 m255
 K3
+z0
 13
 cModel Technology
 Z0 dQ:\MS6.001\examples
@@ -10,14 +11,16 @@ VaS03ogk>c0GGPLXmlVZbL3
 Z1 o-quiet -auto_acc_if_foreign -work work
 tExplicit 1
 OE;O;6.3;37
+R0
 T_opt1
-VNKAVXBDgSK0bFYUnDWe753
-04 3 4 work Mul fast 0
-=1-a0d3c10bf464-54d9514e-2cb-16dc
+!s110 1424708891
+Vk6K;`CNdG6kW]JOAZKchH0
+04 6 4 work PWM_tb fast 0
+=1-a0d3c10f5caf-54eb551a-40-197c
 R1
 n@_opt1
 Z2 OE;O;10.3c;59
-!s110 1423528273
+R0
 T_opt2
 V3hidel`_U]b`ccU`mGJKe3
 04 3 4 work PWM fast 0
@@ -26,191 +29,364 @@ R1
 n@_opt2
 R2
 !s110 1423260452
+R0
 vadd4bit
-I=9[;I8F45[m<^ZDO5chcU2
-V[YC@l8`L:k3@>eSN>Bj1c0
-Z3 dI:\ECE551~2
-Z4 w1423546216
-Z5 8I:/ECE551~2/src/add4bit.v
-Z6 FI:/ECE551~2/src/add4bit.v
+Z3 !s110 1424707586
+!i10b 1
+!s100 QcTQM`OR[UV`Z]z9jQcGJ1
+I[lhmLcQ4]50n=LSJ80RRC0
+Z4 V`JN@9S9cnhjKRR_L]QIcM3
+Z5 dI:/ECE551~2
+Z6 w1423546216
+Z7 8I:/ECE551~2/src/add4bit.v
+Z8 FI:/ECE551~2/src/add4bit.v
 L0 1
-Z7 OE;L;6.3;37
+Z9 OE;L;10.3c;59
 r1
-31
-Z8 o-work work -nocovercells -L mtiAvm
 !s85 0
+31
+Z10 !s108 1424707586.426000
+Z11 !s107 I:/ECE551~2/src/add4bit.v|
+Z12 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/add4bit.v|
+!i113 0
+Z13 o-work work -L mtiAvm
+Z14 tCoverOpt 2
 vadd4bit_tb
-IMZ;AnNk`hoje=o]:iFhK>3
-V[5nomzSDzM]SE;XM;8SOS2
 R3
+!i10b 1
+!s100 ]A]i81n5YfmEoWg3de7R00
+IVSkZMG8]>2a<4oJ^iE8oi0
 R4
 R5
 R6
+R7
+R8
 L0 11
-R7
+R9
 r1
-31
-R8
 !s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
 vadd8bit
-IGSdD]0o]Kd:C`:fPGek5J2
-VbQQMdU4Xk]Z`znQb6a[[J0
-R3
+Z15 !s110 1424707589
+!i10b 1
+!s100 hghX7lO7FY1nWKfF21_R]3
+Ih9`3gMBY1TzC31BIb9;ol0
 R4
-Z9 8I:/ECE551~2/src/FullAdder.v
-Z10 FI:/ECE551~2/src/FullAdder.v
+R5
+R6
+Z16 8I:/ECE551~2/src/FullAdder.v
+Z17 FI:/ECE551~2/src/FullAdder.v
 L0 17
-R7
+R9
 r1
-31
-R8
 !s85 0
+31
+Z18 !s108 1424707588.538000
+Z19 !s107 I:/ECE551~2/src/FullAdder.v|
+Z20 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FullAdder.v|
+!i113 0
+R13
+R14
 vadd8bit_tb
-I<AgG8Z70[j2zi`l?;5`ZK2
-V^I8b7UazLDz4KFLiknY8?2
-R3
+Z21 !s110 1424707587
+!i10b 1
+!s100 KP1hWj<[;6mnn0i9?>lc;3
+I^<ZmmK8`ReeaiQ<m:Ma>n3
 R4
+R5
+R6
 8I:/ECE551~2/src/FA_t.v
 FI:/ECE551~2/src/FA_t.v
 L0 2
-R7
+R9
 r1
-31
-R8
 !s85 0
+31
+!s108 1424707587.640000
+!s107 I:/ECE551~2/src/FA_t.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FA_t.v|
+!i113 0
+R13
+R14
 vALU
-IKMPl5Z7CX>UJbBi3KCi[?2
-V_cQ9MH>5i383jG0i[ZMAS0
-R3
+R21
+!i10b 1
+!s100 2E208O106^Cna_mgeg5BD1
+IoWS5mP7ca_:LaB]9@82lR2
+R4
+R5
 w1424281822
 8I:/ECE551~2/src/ALU.v
 FI:/ECE551~2/src/ALU.v
 L0 1
-R7
+R9
 r1
-31
-R8
-n@a@l@u
 !s85 0
+31
+!s108 1424707587.029000
+!s107 I:/ECE551~2/src/ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/ALU.v|
+!i113 0
+R13
+R14
+n@a@l@u
 vALU_tb
-Ic<meCD0^kB3:TZejj9e7V2
-VE`_QLbcAmOeKZDFMXUl3B3
-R3
+R21
+!i10b 1
+!s100 `]g`mQWL_i5Ag0g26CdaM2
+IbP8CVUQF_Ca2E>iI>G6;J3
+R4
+R5
 w1424283237
 8I:/ECE551~2/src/ALU_tb.v
 FI:/ECE551~2/src/ALU_tb.v
 L0 1
-R7
-r1
-31
-R8
-n@a@l@u_tb
-!s85 0
-vFA
-II]SmM8;if6NI8<=SXQ?Wg3
-VA=^?l^TdCln53;9]G:Cm53
-R3
-R4
 R9
-R10
-L0 1
-R7
 r1
-31
-R8
-n@f@a
 !s85 0
+31
+!s108 1424707587.309000
+!s107 I:/ECE551~2/src/ALU_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/ALU_tb.v|
+!i113 0
+R13
+R14
+n@a@l@u_tb
+vFA
+Z22 !s110 1424707588
+!i10b 1
+!s100 H<<M[i?6J]EgHQKJ7Z5=a3
+I`k8hj]WQnK<2GlLQj0]a>2
+R4
+R5
+R6
+R16
+R17
+L0 1
+R9
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 0
+R13
+R14
+n@f@a
 vFirstFPGA
-ILA?F1hfelE9E;mHeK32Uo3
-VznaKbSR66C5]Ah@hc1NJU3
-R3
+R22
+!i10b 1
+!s100 XPU9fLIH16ePj0[<`E:XO0
+I_mMU?7zHzAFD=30]hN@kj3
+R4
+R5
 w1424448484
 8I:/ECE551~2/src/FirstFPGA.v
 FI:/ECE551~2/src/FirstFPGA.v
 L0 1
-R7
+R9
 r1
-31
-R8
-n@first@f@p@g@a
 !s85 0
-vMul
-IFm7jCX5zX3b=W:X_6WJ@b1
-V:W5^VMc?zIgJLTjNDFElf2
-R3
+31
+!s108 1424707587.957000
+!s107 I:/ECE551~2/src/FirstFPGA.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FirstFPGA.v|
+!i113 0
+R13
+R14
+n@first@f@p@g@a
+vmoto_driver_tb
 R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 `8FKLAi=2F6CE3NmOhRMN2
+Imi<LjLkVYb2f2]fKQ<^V52
+R5
+Z23 w1424714390
+Z24 8I:/ECE551~2/src/motor_driver.v
+Z25 FI:/ECE551~2/src/motor_driver.v
+L0 26
+R9
+Z26 !s108 1424714393.026000
+Z27 !s107 I:/ECE551~2/src/motor_driver.v|
+Z28 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/motor_driver.v|
+!i113 0
+R13
+R14
+vmotor_driver
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 h^SIQSX^WQm=Xd9^_n@6B3
+IB1TIXV_h3zK?OMX3X_8>o1
+R5
+R23
+R24
+R25
+L0 1
+R9
+R26
+R27
+R28
+!i113 0
+R13
+R14
+vMul
+R15
+!i10b 1
+!s100 _WBDz02onXWMiA^jE`59l0
+ITQkc_:OH2EJ7Di`57ami73
+R4
+R5
+R6
 8I:/ECE551~2/src/Mul.v
 FI:/ECE551~2/src/Mul.v
 L0 1
-R7
+R9
 r1
+!s85 0
 31
-R8
+!s108 1424707589.276000
+!s107 I:/ECE551~2/src/Mul.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/Mul.v|
+!i113 0
+R13
+R14
 n@mul
-!s85 0
 vosc
-IlicEkLSOOTb>;V=lK5[lZ1
-VnEWT=SeG5iMg4nX4fW5V]3
-R3
+Z29 !s110 1424707590
+!i10b 1
+!s100 jA7<i6=g7Fn932R06MMDR3
+IW_`FI;VHRj?`@]QQ1M[R]3
 R4
-Z11 8I:/ECE551~2/src/Oscillating.v
-Z12 FI:/ECE551~2/src/Oscillating.v
+R5
+R6
+Z30 8I:/ECE551~2/src/Oscillating.v
+Z31 FI:/ECE551~2/src/Oscillating.v
 L0 1
-R7
+R9
 r1
-31
-R8
 !s85 0
+31
+Z32 !s108 1424707589.825000
+Z33 !s107 I:/ECE551~2/src/Oscillating.v|
+Z34 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/Oscillating.v|
+!i113 0
+R13
+R14
 vosc_tb
-IJ^6H?iQPF<]6Wm`2VaEj?0
-VB57WILY^6`]>cM>5j6DC_0
-R3
+R29
+!i10b 1
+!s100 m;RY[Z2LhEGF0iaX^a8j91
+Id8B0<nz`U@CWRTz^1ERR[0
 R4
-R11
-R12
+R5
+R6
+R30
+R31
 L0 14
-R7
+R9
 r1
-31
-R8
 !s85 0
+31
+R32
+R33
+R34
+!i113 0
+R13
+R14
 vPWM
-IYD;6lVZ8@QN8YK86:Z^e61
-VEWl0A]c62XGAC[8n<0]ji3
-R3
 R4
-8I:/ECE551~2/src/PWM.v
-FI:/ECE551~2/src/PWM.v
-L0 1
-R7
 r1
-31
-R8
-n@p@w@m
 !s85 0
+31
+!i10b 1
+!s100 @_fnBf3d?JVjGAOiS9b6K0
+I5kYFeb191QK2O[N<aDiP81
+R5
+Z35 w1424711393
+Z36 8I:/ECE551~2/src/PWM.v
+Z37 FI:/ECE551~2/src/PWM.v
+L0 1
+R9
+Z38 !s108 1424711395.120000
+Z39 !s107 I:/ECE551~2/src/PWM.v|
+Z40 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/PWM.v|
+!i113 0
+R13
+R14
+n@p@w@m
+vPWM_tb
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 :G?gN9mG4;F9@IK0g>5oC1
+IgNo6m4LOEgFSbf]RUP^NY1
+R5
+R35
+R36
+R37
+L0 24
+R9
+R38
+R39
+R40
+!i113 0
+R13
+R14
+n@p@w@m_tb
 vreset_synch
-I9m`Am`n@aYdOPYgBggSCQ0
-VO@4]53YD:@GnboW@RGiV:3
-R3
+Z41 !s110 1424707591
+!i10b 1
+!s100 9o>ziDNVL0Qm7Te^zX?2m0
+I;P]8UZC7B]<78@ndi0G7?0
+R4
+R5
 w1424284518
 8I:/ECE551~2/src/reset_synch.v
 FI:/ECE551~2/src/reset_synch.v
 L0 1
-R7
+R9
 r1
-31
-R8
 !s85 0
+31
+!s108 1424707590.910000
+!s107 I:/ECE551~2/src/reset_synch.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/reset_synch.v|
+!i113 0
+R13
+R14
 vsimple_cnt
-IW>8lYH16cnO`U0aie]ZKa3
-VbNfUFk`Q_;?M8=nRf91a40
-R3
+R41
+!i10b 1
+!s100 Id?<?2Q`2dUL<L[=6_i]30
+I]E4I<@`fENe=S9czL7SoT3
+R4
+R5
 w1424448120
 8I:/ECE551~2/src/simple_cnt.v
 FI:/ECE551~2/src/simple_cnt.v
 L0 1
-R7
+R9
 r1
 !s85 0
 31
-R8
+!s108 1424707591.169000
+!s107 I:/ECE551~2/src/simple_cnt.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/simple_cnt.v|
+!i113 0
+R13
+R14
