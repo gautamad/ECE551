@@ -1,12 +1,4 @@
-I:/ECE551~2/src/motor_driver.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/motor_driver.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module motor_driver
--- Compiling module moto_driver_tb
-
-Top level modules:
-	moto_driver_tb
-
-} {} {}} I:/ECE551~2/src/add4bit.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/add4bit.v
+I:/ECE551~2/src/add4bit.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/add4bit.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 -- Compiling module add4bit
 -- Compiling module add4bit_tb
@@ -14,26 +6,13 @@ Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 Top level modules:
 	add4bit_tb
 
-} {} {}} I:/ECE551~2/src/Mul.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/Mul.v
+} {} {}} I:/ECE551~2/src/motor_driver.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/motor_driver.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module Mul
+-- Compiling module motor_driver
+-- Compiling module moto_driver_tb
 
 Top level modules:
-	Mul
-
-} {} {}} I:/ECE551~2/src/simple_cnt.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/simple_cnt.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module simple_cnt
-
-Top level modules:
-	simple_cnt
-
-} {} {}} I:/ECE551~2/src/ALU_tb.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/ALU_tb.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module ALU_tb
-
-Top level modules:
-	ALU_tb
+	moto_driver_tb
 
 } {} {}} I:/ECE551~2/src/Oscillating.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/Oscillating.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
@@ -43,6 +22,13 @@ Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 Top level modules:
 	osc_tb
 
+} {} {}} I:/ECE551~2/src/FA_t.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/FA_t.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module add8bit_tb
+
+Top level modules:
+	add8bit_tb
+
 } {} {}} I:/ECE551~2/src/FirstFPGA.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/FirstFPGA.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 -- Compiling module FirstFPGA
@@ -50,30 +36,19 @@ Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 Top level modules:
 	FirstFPGA
 
-} {} {}} I:/ECE551~2/src/reset_synch.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/reset_synch.v
+} {} {}} I:/ECE551~2/src/simple_cnt.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/simple_cnt.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module reset_synch
+-- Compiling module simple_cnt
 
 Top level modules:
-	reset_synch
+	simple_cnt
 
-} {} {}} I:/ECE551~2/src/ALU.v {2 {vlog -work work -vopt -stats=none I:/ECE551~2/src/ALU.v
+} {} {}} I:/ECE551~2/src/Mul.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/Mul.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module ALU
-** Warning: I:/ECE551~2/src/ALU.v(8): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-
-** Warning: I:/ECE551~2/src/ALU.v(9): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-
+-- Compiling module Mul
 
 Top level modules:
-	ALU
-
-} {} {}} I:/ECE551~2/src/FA_t.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/FA_t.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module add8bit_tb
-
-Top level modules:
-	add8bit_tb
+	Mul
 
 } {} {}} I:/ECE551~2/src/FullAdder.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/FullAdder.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
@@ -82,5 +57,19 @@ Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 
 Top level modules:
 	add8bit
+
+} {} {}} I:/ECE551~2/src/reset_synch.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/reset_synch.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module reset_synch
+
+Top level modules:
+	reset_synch
+
+} {} {}} I:/ECE551~2/src/ALU_tb.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/ALU_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ALU_tb
+
+Top level modules:
+	ALU_tb
 
 } {} {}}
