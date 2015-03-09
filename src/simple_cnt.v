@@ -1,10 +1,13 @@
 module simple_cnt(rst_n, clk, count);
+
+	parameter SIZE = 21; // Counter size
+	
 	input rst_n, clk;
-	output reg [21:0] count;
+	output reg [SIZE:0] count;
 
 	always @(posedge clk, negedge rst_n) begin
 		if(rst_n == 1'b0) begin
-			count <= 22'b0;
+			count <= 0;
 		end
 		else begin
 			count <= count + 1;
