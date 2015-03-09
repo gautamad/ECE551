@@ -31,13 +31,13 @@ R2
 !s110 1423260452
 R0
 vadd4bit
-Z3 !s110 1424707586
+Z3 !s110 1425843984
 !i10b 1
 !s100 QcTQM`OR[UV`Z]z9jQcGJ1
 I[lhmLcQ4]50n=LSJ80RRC0
 Z4 V`JN@9S9cnhjKRR_L]QIcM3
 Z5 dI:/ECE551~2
-Z6 w1423546216
+Z6 w1423549816
 Z7 8I:/ECE551~2/src/add4bit.v
 Z8 FI:/ECE551~2/src/add4bit.v
 L0 1
@@ -45,7 +45,7 @@ Z9 OE;L;10.3c;59
 r1
 !s85 0
 31
-Z10 !s108 1424707586.426000
+Z10 !s108 1425843984.526000
 Z11 !s107 I:/ECE551~2/src/add4bit.v|
 Z12 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/add4bit.v|
 !i113 0
@@ -73,7 +73,7 @@ R12
 R13
 R14
 vadd8bit
-Z15 !s110 1424707589
+Z15 !s110 1425843986
 !i10b 1
 !s100 hghX7lO7FY1nWKfF21_R]3
 Ih9`3gMBY1TzC31BIb9;ol0
@@ -87,14 +87,14 @@ R9
 r1
 !s85 0
 31
-Z18 !s108 1424707588.538000
+Z18 !s108 1425843986.706000
 Z19 !s107 I:/ECE551~2/src/FullAdder.v|
 Z20 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FullAdder.v|
 !i113 0
 R13
 R14
 vadd8bit_tb
-Z21 !s110 1424707587
+R15
 !i10b 1
 !s100 KP1hWj<[;6mnn0i9?>lc;3
 I^<ZmmK8`ReeaiQ<m:Ma>n3
@@ -108,20 +108,20 @@ R9
 r1
 !s85 0
 31
-!s108 1424707587.640000
+!s108 1425843985.951000
 !s107 I:/ECE551~2/src/FA_t.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FA_t.v|
 !i113 0
 R13
 R14
 vALU
-!s110 1425312329
+Z21 !s110 1425843985
 !i10b 1
 !s100 2E208O106^Cna_mgeg5BD1
 IoWS5mP7ca_:LaB]9@82lR2
 R4
 R5
-w1425072588
+w1425076188
 8I:/ECE551~2/src/ALU.v
 FI:/ECE551~2/src/ALU.v
 L0 1
@@ -129,7 +129,7 @@ R9
 r1
 !s85 0
 31
-!s108 1425312329.158000
+!s108 1425843985.265000
 !s107 I:/ECE551~2/src/ALU.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/ALU.v|
 !i113 0
@@ -143,7 +143,7 @@ R21
 IbP8CVUQF_Ca2E>iI>G6;J3
 R4
 R5
-w1424283237
+w1424286837
 8I:/ECE551~2/src/ALU_tb.v
 FI:/ECE551~2/src/ALU_tb.v
 L0 1
@@ -151,7 +151,7 @@ R9
 r1
 !s85 0
 31
-!s108 1424707587.309000
+!s108 1425843985.585000
 !s107 I:/ECE551~2/src/ALU_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/ALU_tb.v|
 !i113 0
@@ -159,7 +159,7 @@ R13
 R14
 n@a@l@u_tb
 vFA
-Z22 !s110 1424707588
+R15
 !i10b 1
 !s100 H<<M[i?6J]EgHQKJ7Z5=a3
 I`k8hj]WQnK<2GlLQj0]a>2
@@ -181,13 +181,13 @@ R13
 R14
 n@f@a
 vFirstFPGA
-R22
+R15
 !i10b 1
 !s100 XPU9fLIH16ePj0[<`E:XO0
 I_mMU?7zHzAFD=30]hN@kj3
 R4
 R5
-w1424448484
+w1424452084
 8I:/ECE551~2/src/FirstFPGA.v
 FI:/ECE551~2/src/FirstFPGA.v
 L0 1
@@ -195,7 +195,7 @@ R9
 r1
 !s85 0
 31
-!s108 1424707587.957000
+!s108 1425843986.366000
 !s107 I:/ECE551~2/src/FirstFPGA.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FirstFPGA.v|
 !i113 0
@@ -203,13 +203,13 @@ R13
 R14
 n@first@f@p@g@a
 vLEDBlinkFPGA
-!s110 1425312349
+Z22 !s110 1425843989
 !i10b 1
 !s100 31Y7Z[Qj3cnOgaWnOl2f:1
 Ic<a2YVEzVf:jc4Wm>>m0L2
 R4
 R5
-w1425072002
+w1425075602
 8I:/ECE551~2/src/LEDBlinkFPGA.v
 FI:/ECE551~2/src/LEDBlinkFPGA.v
 L0 1
@@ -217,7 +217,7 @@ R9
 r1
 !s85 0
 31
-!s108 1425312349.156000
+!s108 1425843989.554000
 !s107 I:/ECE551~2/src/LEDBlinkFPGA.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/LEDBlinkFPGA.v|
 !i113 0
@@ -225,39 +225,41 @@ R13
 R14
 n@l@e@d@blink@f@p@g@a
 vmoto_driver_tb
-R4
-r1
-!s85 0
-31
+R22
 !i10b 1
 !s100 nAYh=Pf1El;1T1Ulk^F:X0
 I@WZ97A?b:j[z4inAn`EIk0
+R4
 R5
-Z23 w1425053853
+Z23 w1425057453
 Z24 8I:/ECE551~2/src/motor_driver.v
 Z25 FI:/ECE551~2/src/motor_driver.v
 L0 26
 R9
-Z26 !s108 1425053856.478000
+r1
+!s85 0
+31
+Z26 !s108 1425843989.059000
 Z27 !s107 I:/ECE551~2/src/motor_driver.v|
 Z28 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/motor_driver.v|
 !i113 0
 R13
 R14
 vmotor_driver
-R4
-r1
-!s85 0
-31
+R22
 !i10b 1
 !s100 USL2Am]d0nRS0JE`^Q=6l1
 I1ja2hdAei_h31;^P`Ve?g1
+R4
 R5
 R23
 R24
 R25
 L0 1
 R9
+r1
+!s85 0
+31
 R26
 R27
 R28
@@ -265,7 +267,7 @@ R28
 R13
 R14
 vMul
-R15
+Z29 !s110 1425843987
 !i10b 1
 !s100 _WBDz02onXWMiA^jE`59l0
 ITQkc_:OH2EJ7Di`57ami73
@@ -279,7 +281,7 @@ R9
 r1
 !s85 0
 31
-!s108 1424707589.276000
+!s108 1425843987.104000
 !s107 I:/ECE551~2/src/Mul.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/Mul.v|
 !i113 0
@@ -287,7 +289,7 @@ R13
 R14
 n@mul
 vosc
-Z29 !s110 1424707590
+R29
 !i10b 1
 !s100 jA7<i6=g7Fn932R06MMDR3
 IW_`FI;VHRj?`@]QQ1M[R]3
@@ -301,7 +303,7 @@ R9
 r1
 !s85 0
 31
-Z32 !s108 1424707589.825000
+Z32 !s108 1425843987.491000
 Z33 !s107 I:/ECE551~2/src/Oscillating.v|
 Z34 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/Oscillating.v|
 !i113 0
@@ -329,57 +331,57 @@ R34
 R13
 R14
 vPWM
-!s110 1425312319
+Z35 !s110 1425843988
 !i10b 1
 !s100 0Y:[gPnEjX6FhGNWG_ckP2
 I<1KHL@zOdNzeUV2;n7mMD1
 R4
 R5
-Z35 w1425055782
-Z36 8I:/ECE551~2/src/PWM.v
-Z37 FI:/ECE551~2/src/PWM.v
+Z36 w1425059382
+Z37 8I:/ECE551~2/src/PWM.v
+Z38 FI:/ECE551~2/src/PWM.v
 L0 1
 R9
 r1
 !s85 0
 31
-Z38 !s108 1425312319.524000
-Z39 !s107 I:/ECE551~2/src/PWM.v|
-Z40 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/PWM.v|
+Z39 !s108 1425843987.951000
+Z40 !s107 I:/ECE551~2/src/PWM.v|
+Z41 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/PWM.v|
 !i113 0
 R13
 R14
 n@p@w@m
 vPWM_tb
-!s110 1425312320
+R35
 !i10b 1
 !s100 d6>[eThcoY`hQ3JeKYeCQ1
 IW1W;ONOH5eiA=ZbD_zUcG3
 R4
 R5
-R35
 R36
 R37
+R38
 L0 25
 R9
 r1
 !s85 0
 31
-R38
 R39
 R40
+R41
 !i113 0
 R13
 R14
 n@p@w@m_tb
 vreset_synch
-Z41 !s110 1424707591
+R35
 !i10b 1
 !s100 9o>ziDNVL0Qm7Te^zX?2m0
 I;P]8UZC7B]<78@ndi0G7?0
 R4
 R5
-w1424284518
+w1424288118
 8I:/ECE551~2/src/reset_synch.v
 FI:/ECE551~2/src/reset_synch.v
 L0 1
@@ -387,20 +389,20 @@ R9
 r1
 !s85 0
 31
-!s108 1424707590.910000
+!s108 1425843988.427000
 !s107 I:/ECE551~2/src/reset_synch.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/reset_synch.v|
 !i113 0
 R13
 R14
 vsimple_cnt
-R41
+R35
 !i10b 1
 !s100 Id?<?2Q`2dUL<L[=6_i]30
 I]E4I<@`fENe=S9czL7SoT3
 R4
 R5
-w1424448120
+w1424451720
 8I:/ECE551~2/src/simple_cnt.v
 FI:/ECE551~2/src/simple_cnt.v
 L0 1
@@ -408,7 +410,7 @@ R9
 r1
 !s85 0
 31
-!s108 1424707591.169000
+!s108 1425843988.720000
 !s107 I:/ECE551~2/src/simple_cnt.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/simple_cnt.v|
 !i113 0
