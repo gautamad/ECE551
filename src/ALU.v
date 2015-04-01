@@ -5,8 +5,8 @@ module ALU(Accum, Pcomp, Pterm, Fwd, A2D_res, Error, Intgrl,
 	
    //ALU Input port definitions
    input [15:0] Accum, Pcomp;
-   input 	unsigned [13:0] Pterm;
-   input 	unsigned [11:0] Fwd, A2D_res;
+   input unsigned [13:0] Pterm;
+   input unsigned [11:0] Fwd, A2D_res;
    input signed [11:0] Error, Intgrl, Icomp, Iterm;
    input [2:0] 	       src1sel, src0sel;
    input 	       multiply, sub, mult2, mult4, saturate;

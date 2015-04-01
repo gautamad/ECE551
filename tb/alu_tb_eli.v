@@ -1,0 +1,42 @@
+module alu_tb();
+
+wire [15:0]dst;
+reg [15:0]Accum, Pcomp;
+reg [13:0]Pterm;
+reg [11:0]Fwd, A2D_res;
+reg signed [11:0]Error, Intgrl, Icomp, Iterm;
+reg [2:0] src1sel, src0sel;
+reg sub, mult2, mult4, multiply, saturate;
+
+reg [128:0] Stim[0:999];
+reg [15:0] resp[0:999];
+reg [10:0]i;
+reg [10:0]pass;
+
+
+ALU iALU(.dst(dst), .Accum(Accum), .Pcomp(Pcomp), .Pterm(Pterm), .Fwd(Fwd), .A2D_res(A2D_res), .Error(Error), .Intgrl(Intgrl), .Icomp(Icomp), .Iterm(Iterm), .src0sel(src0sel), .src1sel(src1sel), .multiply(multiply), .sub(sub), .mult2(mult2), .mult4(mult4), .saturate(saturate));
+
+initial begin
+
+    pass = 10'h000;
+    $readmemh("ALU_stim.hex", Stim);
+    $readmemh("ALU_resp.hex", resp);
+
+    for (i=0; i<1000; i = i+1) begin
+        {Accum, Pcomp, Pterm, Fwd, A2D_res, Error, Intgrl, Icomp, Iterm, src1sel, src0sel, multiply, sub, mult2, mult4, saturate} = Stim[i];
+        #10;
+        if( dst != resp[i]) begin
+             $display("Unexpected output! Expected:%h Actual:%h", resp[i], dst);
+             $stop;
+        end
+        else begin
+            $display("Resp[%d] passed", i);
+            pass = pass+1;
+        end
+        #10;
+    end
+    $display("Passed : %d", pass);
+    $stop;
+end
+
+endmodule
