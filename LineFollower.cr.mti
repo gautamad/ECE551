@@ -28,20 +28,6 @@ Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 Top level modules:
 	simple_cnt
 
-} {} {}} I:/ECE551~2/src/ALU_tb.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/ALU_tb.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module ALU_tb
-
-Top level modules:
-	ALU_tb
-
-} {} {}} I:/ECE551~2/src/alu_tb_eli.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/alu_tb_eli.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module alu_tb
-
-Top level modules:
-	alu_tb
-
 } {} {}} I:/ECE551~2/src/Oscillating.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/Oscillating.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 -- Compiling module osc
@@ -79,23 +65,16 @@ Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
 Top level modules:
 	reset_synch
 
-} {} {}} I:/ECE551~2/src/UartTx.v {0 {vlog -work work -vopt -stats=none I:/ECE551~2/src/UartTx.v
+} {} {}} I:/ECE551~2/src/ALU.v {2 {vlog -work work -vopt -stats=none I:/ECE551~2/src/ALU.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module UartTx
-** Error: I:/ECE551~2/src/UartTx.v(25): (vlog-2730) Undefined variable: 'trmt'.
+-- Compiling module ALU
+** Warning: I:/ECE551~2/src/ALU.v(8): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
 
-** Error: I:/ECE551~2/src/UartTx.v(34): near "endmodule": syntax error, unexpected endmodule
-** Error: I:/ECE551~2/src/UartTx.v(44): Declarations not allowed in unnamed block.
-** Error: I:/ECE551~2/src/UartTx.v(46): Illegal declaration after the statement near line '42'.  Declarations must precede statements.  Look for stray semicolons.
-** Error: I:/ECE551~2/src/UartTx.v(1): Identifier must be declared with a port mode: trmt.
--- Compiling module bit_counter
+** Warning: I:/ECE551~2/src/ALU.v(9): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
 
-} {4.0 5.0 6.0 10.0} {}} I:/ECE551~2/src/FA_t.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/FA_t.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module add8bit_tb
 
 Top level modules:
-	add8bit_tb
+	ALU
 
 } {} {}} I:/ECE551~2/src/FullAdder.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/FullAdder.v
 Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014

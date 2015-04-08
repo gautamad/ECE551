@@ -1,0 +1,358 @@
+m255
+K3
+13
+Z0 cModel Technology
+Z1 dQ:\MS6.001\examples
+T_opt
+Z2 VaS03ogk>c0GGPLXmlVZbL3
+Z3 04 10 4 work add4bit_tb fast 0
+Z4 =1-a0d3c10da740-54d4ea19-4b-17c4
+Z5 o-quiet -auto_acc_if_foreign -work work
+Z6 tExplicit 1
+Z7 OE;O;6.3;37
+T_opt1
+Z8 VI`6FS7[:fX]Hi^3ZoBV^<0
+Z9 04 6 4 work UartTx fast 0
+Z10 =1-a0b3ccfe06f2-5522ef34-344-1868
+R5
+R6
+R7
+T_opt2
+Z11 V3hidel`_U]b`ccU`mGJKe3
+Z12 04 3 4 work PWM fast 0
+Z13 =1-a0d3c10fdb96-54d53b22-29b-1a30
+R5
+Z14 n@_opt2
+Z15 OE;O;10.3c;59
+Z16 !s110 1423260452
+vadd4bit
+Z17 I=9[;I8F45[m<^ZDO5chcU2
+Z18 V[YC@l8`L:k3@>eSN>Bj1c0
+Z19 dI:\ECE551~2
+Z20 w1423549816
+Z21 8I:/ECE551~2/src/add4bit.v
+Z22 FI:/ECE551~2/src/add4bit.v
+L0 1
+Z23 OE;L;6.3;37
+r1
+31
+Z24 o-work work -nocovercells -L mtiAvm
+!s85 0
+vadd4bit_tb
+Z25 IMZ;AnNk`hoje=o]:iFhK>3
+Z26 V[5nomzSDzM]SE;XM;8SOS2
+R19
+R20
+R21
+R22
+L0 11
+R23
+r1
+31
+R24
+!s85 0
+vadd8bit
+Z27 IGSdD]0o]Kd:C`:fPGek5J2
+Z28 VbQQMdU4Xk]Z`znQb6a[[J0
+R19
+R20
+Z29 8I:/ECE551~2/src/FullAdder.v
+Z30 FI:/ECE551~2/src/FullAdder.v
+L0 17
+R23
+r1
+31
+R24
+!s85 0
+vadd8bit_tb
+Z31 !s110 1427230140
+Z32 I^<ZmmK8`ReeaiQ<m:Ma>n3
+Z33 V`JN@9S9cnhjKRR_L]QIcM3
+Z34 dI:/ECE551~2
+R20
+Z35 8I:/ECE551~2/src/FA_t.v
+Z36 FI:/ECE551~2/src/FA_t.v
+L0 2
+Z37 OE;L;10.3c;59
+r1
+31
+Z38 o-work work -L mtiAvm
+Z39 tCoverOpt 2
+!i10b 1
+Z40 !s100 KP1hWj<[;6mnn0i9?>lc;3
+!s85 0
+Z41 !s108 1427230140.243000
+Z42 !s107 I:/ECE551~2/src/FA_t.v|
+Z43 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FA_t.v|
+!i113 0
+vALU
+Z44 IKMPl5Z7CX>UJbBi3KCi[?2
+Z45 V_cQ9MH>5i383jG0i[ZMAS0
+R19
+Z46 w1427232059
+Z47 8I:/ECE551~2/src/ALU.v
+Z48 FI:/ECE551~2/src/ALU.v
+L0 1
+R23
+r1
+31
+R24
+Z49 n@a@l@u
+!s85 0
+vALU_tb
+R31
+Z50 IbP8CVUQF_Ca2E>iI>G6;J3
+R33
+R34
+Z51 w1424286837
+Z52 8I:/ECE551~2/src/ALU_tb.v
+Z53 FI:/ECE551~2/src/ALU_tb.v
+L0 1
+R37
+r1
+31
+R38
+R39
+Z54 n@a@l@u_tb
+!i10b 1
+Z55 !s100 `]g`mQWL_i5Ag0g26CdaM2
+!s85 0
+Z56 !s108 1427230139.986000
+Z57 !s107 I:/ECE551~2/src/ALU_tb.v|
+Z58 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/ALU_tb.v|
+!i113 0
+valu_tb
+R33
+r1
+31
+Z59 I?I8QI>Y0MJiaHoGB7WJ4N3
+R34
+Z60 w1427230176
+Z61 8I:/ECE551~2/src/alu_tb_eli.v
+Z62 FI:/ECE551~2/src/alu_tb_eli.v
+L0 1
+R37
+R38
+R39
+!s85 0
+!i10b 1
+Z63 !s100 J814I`_FQ==EE6@LL]UmR0
+Z64 !s108 1427230197.191000
+Z65 !s107 I:/ECE551~2/src/alu_tb_eli.v|
+Z66 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/alu_tb_eli.v|
+!i113 0
+vbaud_counter
+Z67 VVHHhLW;X:a69P@lYe>>hB2
+r1
+31
+Z68 IIa4XEAK2eGFE?<LIL]b:S2
+R19
+Z69 w1428352763
+Z70 8I:/ECE551~2/src/UartTx.v
+Z71 FI:/ECE551~2/src/UartTx.v
+L0 89
+R23
+R24
+!s85 0
+vbit_counter
+Z72 Vg2GB^8[Fm9obL3kHWgLj<1
+r1
+31
+Z73 IL4]2dIG024i2;EUh_g:X:2
+R19
+R69
+R70
+R71
+Z74 L0 111
+R23
+R24
+!s85 0
+vFA
+Z75 II]SmM8;if6NI8<=SXQ?Wg3
+Z76 VA=^?l^TdCln53;9]G:Cm53
+R19
+R20
+R29
+R30
+L0 1
+R23
+r1
+31
+R24
+n@f@a
+!s85 0
+vFirstFPGA
+Z77 ILA?F1hfelE9E;mHeK32Uo3
+Z78 VznaKbSR66C5]Ah@hc1NJU3
+R19
+Z79 w1424452084
+Z80 8I:/ECE551~2/src/FirstFPGA.v
+Z81 FI:/ECE551~2/src/FirstFPGA.v
+L0 1
+R23
+r1
+31
+R24
+Z82 n@first@f@p@g@a
+!s85 0
+vLEDBlinkFPGA
+Z83 I07^z9T`RoJ3O3MXSgWRVn0
+Z84 VdHTcnAhQK__D5SaXT`DlW0
+R19
+Z85 w1425075602
+Z86 8I:/ECE551~2/src/LEDBlinkFPGA.v
+Z87 FI:/ECE551~2/src/LEDBlinkFPGA.v
+L0 1
+R23
+r1
+31
+R24
+Z88 n@l@e@d@blink@f@p@g@a
+!s85 0
+vmoto_driver_tb
+Z89 Ilf[Q20_XkK5ol9lb3d3AK0
+Z90 V6zY;>]8@23]cCH4nOVU5Y1
+R19
+Z91 w1425057453
+Z92 8I:/ECE551~2/src/motor_driver.v
+Z93 FI:/ECE551~2/src/motor_driver.v
+L0 26
+R23
+r1
+31
+R24
+!s85 0
+vmotor_driver
+Z94 IYhNz[0mi]BX6UDUla5HPX1
+Z95 VQzA=^[mC5>K3GkfaFA6jL3
+R19
+R91
+R92
+R93
+L0 1
+R23
+r1
+31
+R24
+!s85 0
+vMul
+Z96 IFm7jCX5zX3b=W:X_6WJ@b1
+Z97 V:W5^VMc?zIgJLTjNDFElf2
+R19
+R20
+Z98 8I:/ECE551~2/src/Mul.v
+Z99 FI:/ECE551~2/src/Mul.v
+L0 1
+R23
+r1
+31
+R24
+n@mul
+!s85 0
+vosc
+Z100 IlicEkLSOOTb>;V=lK5[lZ1
+Z101 VnEWT=SeG5iMg4nX4fW5V]3
+R19
+R20
+Z102 8I:/ECE551~2/src/Oscillating.v
+Z103 FI:/ECE551~2/src/Oscillating.v
+L0 1
+R23
+r1
+31
+R24
+!s85 0
+vosc_tb
+Z104 IJ^6H?iQPF<]6Wm`2VaEj?0
+Z105 VB57WILY^6`]>cM>5j6DC_0
+R19
+R20
+R102
+R103
+L0 14
+R23
+r1
+31
+R24
+!s85 0
+vPWM
+Z106 IL22dnz8U5;^<b@fR84<a40
+Z107 VEWl0A]c62XGAC[8n<0]ji3
+R19
+Z108 w1427940603
+Z109 8I:/ECE551~2/src/PWM.v
+Z110 FI:/ECE551~2/src/PWM.v
+L0 1
+R23
+r1
+31
+R24
+Z111 n@p@w@m
+!s85 0
+vPWM_tb
+Z112 I>>ZK0mmFdB5`e?KAf;SO21
+Z113 ViENnfUnc]P^I0WlYVf1T?1
+R19
+R108
+R109
+R110
+L0 25
+R23
+r1
+31
+R24
+Z114 n@p@w@m_tb
+!s85 0
+vreset_synch
+Z115 I9m`Am`n@aYdOPYgBggSCQ0
+Z116 VO@4]53YD:@GnboW@RGiV:3
+R19
+Z117 w1424288118
+Z118 8I:/ECE551~2/src/reset_synch.v
+Z119 FI:/ECE551~2/src/reset_synch.v
+L0 1
+R23
+r1
+31
+R24
+!s85 0
+vshift_register
+Z120 V0He9zY3OcAB8DiJNZNWj93
+r1
+31
+Z121 IE;gh7n1mNYDd;=[3ZO`=k3
+R19
+R69
+R70
+R71
+L0 67
+R23
+R24
+!s85 0
+vsimple_cnt
+Z122 VUTMLU^RP?V7[3`YY?D=Fd2
+r1
+31
+Z123 IX?;N?P7c@=0Rmjz^4og2P2
+R19
+Z124 w1428352198
+Z125 8I:/ECE551~2/src/simple_cnt.v
+Z126 FI:/ECE551~2/src/simple_cnt.v
+L0 1
+R23
+R24
+!s85 0
+vUartTx
+Z127 V0LQdR7OGMg^^:DEXJmP4H0
+r1
+31
+Z128 IJ0aZH`m<?0_Szaieg6?YC2
+R19
+R69
+R70
+R71
+L0 1
+R23
+R24
+Z129 n@uart@tx
+!s85 0

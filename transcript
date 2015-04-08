@@ -1,0 +1,191 @@
+# Compile of add4bit.v was successful.
+# Compile of ALU.v was successful with warnings.
+# Compile of FirstFPGA.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of LEDBlinkFPGA.v was successful.
+# Compile of motor_driver.v was successful.
+# Compile of Mul.v was successful.
+# Compile of Oscillating.v was successful.
+# Compile of PWM.v was successful.
+# Compile of reset_synch.v was successful.
+# Compile of simple_cnt.v was successful.
+# Compile of UartTx.v was successful.
+# 12 compiles, 0 failed with no errors. 
+vsim -novopt work.UartTx
+# vsim -novopt work.UartTx 
+# Refreshing I:\ECE551~2\work.UartTx
+# Loading work.UartTx
+# Refreshing I:\ECE551~2\work.shift_register
+# Loading work.shift_register
+# Refreshing I:\ECE551~2\work.baud_counter
+# Loading work.baud_counter
+# Refreshing I:\ECE551~2\work.simple_cnt
+# Loading work.simple_cnt
+# Refreshing I:\ECE551~2\work.bit_counter
+# Loading work.bit_counter
+add wave \
+{sim:/UartTx/IDLE } \
+{sim:/UartTx/LOAD } \
+{sim:/UartTx/TRMT } \
+{sim:/UartTx/S3 } \
+{sim:/UartTx/clk } \
+{sim:/UartTx/rst_n } \
+{sim:/UartTx/trmt } \
+{sim:/UartTx/tx_data } \
+{sim:/UartTx/TX } \
+{sim:/UartTx/tx_done } \
+{sim:/UartTx/load } \
+{sim:/UartTx/transmitting } \
+{sim:/UartTx/bit_cnt } \
+{sim:/UartTx/shift } \
+{sim:/UartTx/state } \
+{sim:/UartTx/next_state } \
+{sim:/UartTx/trans_done } 
+force -freeze sim:/UartTx/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/UartTx/rst_n 0 0
+run
+run
+run
+force -freeze sim:/UartTx/rst_n 1 0
+run
+force -freeze sim:/UartTx/trmt 1 0
+force -freeze sim:/UartTx/tx_data 00110011 0
+run
+run
+run
+run
+run
+add wave \
+{sim:/UartTx/shiftreg/load } \
+{sim:/UartTx/shiftreg/shift } \
+{sim:/UartTx/shiftreg/tx_data } \
+{sim:/UartTx/shiftreg/TX } \
+{sim:/UartTx/shiftreg/regData } 
+add wave \
+{sim:/UartTx/baudcnt/shift_reg } \
+{sim:/UartTx/baudcnt/rst_n } \
+{sim:/UartTx/baudcnt/count_val } 
+add wave sim:/UartTx/bitcnt/*
+restart
+force -freeze sim:/UartTx/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/UartTx/rst_n 0 0
+run
+run
+force -freeze sim:/UartTx/rst_n 1 0
+run
+force -freeze sim:/UartTx/trmt 1 0
+force -freeze sim:/UartTx/tx_data 00001111 0
+run
+run
+run
+# Compile of add4bit.v was successful.
+# Compile of ALU.v was successful with warnings.
+# Compile of FirstFPGA.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of LEDBlinkFPGA.v was successful.
+# Compile of motor_driver.v was successful.
+# Compile of Mul.v was successful.
+# Compile of Oscillating.v was successful.
+# Compile of PWM.v was successful.
+# Compile of reset_synch.v was successful.
+# Compile of simple_cnt.v was successful.
+# Compile of UartTx.v was successful.
+# 12 compiles, 0 failed with no errors. 
+restart
+# Refreshing I:\ECE551~2\work.UartTx
+# Loading work.UartTx
+# Refreshing I:\ECE551~2\work.shift_register
+# Loading work.shift_register
+# Refreshing I:\ECE551~2\work.baud_counter
+# Loading work.baud_counter
+# Refreshing I:\ECE551~2\work.simple_cnt
+# Loading work.simple_cnt
+# Refreshing I:\ECE551~2\work.bit_counter
+# Loading work.bit_counter
+force -freeze sim:/UartTx/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/UartTx/rst_n 0 0
+run
+force -freeze sim:/UartTx/trmt 1 0
+force -freeze sim:/UartTx/tx_data 00110011 0
+run
+force -freeze sim:/UartTx/rst_n 1 0
+force -freeze sim:/UartTx/trmt 0 0
+run
+force -freeze sim:/UartTx/trmt 1 0
+run
+run
+run
+run
+# Compile of add4bit.v was successful.
+# Compile of ALU.v was successful with warnings.
+# Compile of FirstFPGA.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of LEDBlinkFPGA.v was successful.
+# Compile of motor_driver.v was successful.
+# Compile of Mul.v was successful.
+# Compile of Oscillating.v was successful.
+# Compile of PWM.v was successful.
+# Compile of reset_synch.v was successful.
+# Compile of simple_cnt.v was successful.
+# Compile of UartTx.v was successful.
+# 12 compiles, 0 failed with no errors. 
+restart
+# Refreshing I:\ECE551~2\work.UartTx
+# Loading work.UartTx
+# Refreshing I:\ECE551~2\work.shift_register
+# Loading work.shift_register
+# Refreshing I:\ECE551~2\work.baud_counter
+# Loading work.baud_counter
+# Refreshing I:\ECE551~2\work.simple_cnt
+# Loading work.simple_cnt
+# Refreshing I:\ECE551~2\work.bit_counter
+# Loading work.bit_counter
+force -freeze sim:/UartTx/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/UartTx/rst_n 0 0
+run
+run
+force -freeze sim:/UartTx/rst_n 1 0
+run
+run
+force -freeze sim:/UartTx/tx_data 00110011 0
+force -freeze sim:/UartTx/trmt 1 0
+run
+run
+run
+run
+# Compile of add4bit.v was successful.
+# Compile of ALU.v was successful with warnings.
+# Compile of FirstFPGA.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of LEDBlinkFPGA.v was successful.
+# Compile of motor_driver.v was successful.
+# Compile of Mul.v was successful.
+# Compile of Oscillating.v was successful.
+# Compile of PWM.v was successful.
+# Compile of reset_synch.v was successful.
+# Compile of simple_cnt.v was successful.
+# Compile of UartTx.v was successful.
+# 12 compiles, 0 failed with no errors. 
+restart
+# Refreshing I:\ECE551~2\work.UartTx
+# Loading work.UartTx
+# Refreshing I:\ECE551~2\work.shift_register
+# Loading work.shift_register
+# Refreshing I:\ECE551~2\work.baud_counter
+# Loading work.baud_counter
+# Refreshing I:\ECE551~2\work.simple_cnt
+# Loading work.simple_cnt
+# Refreshing I:\ECE551~2\work.bit_counter
+# Loading work.bit_counter
+force -freeze sim:/UartTx/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/UartTx/rst_n 0 0
+run
+run
+force -freeze sim:/UartTx/rst_n 1 0
+force -freeze sim:/UartTx/trmt 1 0
+force -freeze sim:/UartTx/tx_data 01010101 0
+run
+run
+run
+run
+quit -sim

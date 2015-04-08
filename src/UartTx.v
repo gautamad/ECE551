@@ -1,67 +1,139 @@
 module UartTx(clk, rst_n, TX, trmt, tx_data, tx_done);
 	input clk;
 	input rst_n;
+	input trmt;
 	input [7:0] tx_data;
 	
 	output TX;
 	output tx_done;
 	
-	parameter S0 = 2'b00, S1 = 2'b01 , S2 = 2'b10, S3 = 2'b11;
+	reg load, transmitting;
+	wire [3:0] bit_cnt;
 	
+	wire shift;
+	
+	parameter IDLE = 2'b00, LOAD = 2'b01 , TRMT = 2'b10, S3 = 2'b11;
+	
+//registers to save state
 	reg [1:0] state, next_state;
-		
+	reg set_done, clr_done;
+	reg rst_shftreg_n;
+	
+	assign tx_done = set_done; // FIXME
+
+
+
+// Instantiate sub modules 
+	shift_register shiftreg(.clk(clk), .rst_n(rst_shftreg_n), .TX(TX), .tx_data(tx_data), .load(load), .shift(shift));
+	
+	baud_counter baudcnt(.clk(clk), .load(load), .transmitting(transmitting), .shift_reg(shift));
+	
+	bit_counter bitcnt(.clk(clk), .load(load), .shift(shift), .bit_cnt(bit_cnt));
+	
+
+
+
+// Primary state machine for UartTx control
+	
 	always @(posedge clk, negedge rst_n) begin
-		if(rst_n)	
-			state <= S0; 	
+		if(!rst_n)	
+			state <= IDLE; 	
 		else
 			state <= next_state;
 	end
 	
-	always @(state) begin
-		case(state)
-			S0: begin
-				if(!rst_n)
-					state = S0;
-				else if(trmt)
-					state = S1;
-				else
-					state = state;
+	always @(state, trmt, bit_cnt, rst_n) begin
+	case(state)
+		IDLE: begin
+		rst_shftreg_n = 0;
+		if(!rst_n)
+			next_state = IDLE;
+		else if(trmt)
+			next_state = LOAD;
+		else
+			next_state = state;
+		end
+			
+		LOAD: begin
+			load = 1;
+			clr_done = 1;
+			rst_shftreg_n = 1;
+			next_state = TRMT;
+		end
+			
+		TRMT: begin
+			transmitting = 1;
+			load = 0;
+			if(bit_cnt == 10) begin
+				set_done = 1;
+				next_state = IDLE;
 			end
-			S1: begin
-								
+			else 
+				next_state = state;
+		end							
+	endcase
 	end
 		
 endmodule
 
+module shift_register(clk, TX, rst_n, tx_data, load, shift);
+	
+	input clk, rst_n, load, shift;
+	input [7:0] tx_data;
+	output TX;
+	reg [9:0] regData;
+	
+	assign TX = regData[0];
+	
+	always @(posedge clk, negedge rst_n) begin
+		if(!rst_n)
+			regData = 9'b0;
+		else begin	
+			if(load)
+				regData = {1'b1, tx_data, 1'b0};
+			else if(shift)
+				regData = {regData[0], regData[9:1]};
+		end
+	end
+			
+endmodule
 
-module baud_counter(load, transmitting, shift, clk)
+module baud_counter(clk, load, transmitting, shift_reg);
 	input load;
 	input transmitting;
 	input clk;
 	
-	output shift;
+	output reg shift_reg;
+	reg rst_n;
+	wire [11:0] count_val;
 	
-	reg count;
+	simple_cnt #(.SIZE(12)) cnt12bit(.clk(clk), .rst_n(rst_n), .count(count_val));
 	
-	simple_cnt #(SIZE=12) (.clk(clk), .rst_n(.rst_n), .count(count));
-	
-	always(count, load,) begin
+	always @(count_val, load) begin
 		if(load == 1)
-			rst_n = 1;
-		else if(count == 2604)
-			shift = 1;
-		else 
-			shift = 0;
+			rst_n = 0;
+		else if(count_val == 2604) begin
+			shift_reg = 1;
+		end
+		else begin 
+   			shift_reg = 0;
+	   end
 	end
-
+	
+	always @(posedge clk) begin
+	    if(count_val == 2604)
+	        rst_n = 0;
+	    else
+		rst_n = 1;
+	end
+	
 endmodule
 
-module bit_counter(load, shift, clk, rst_n, bit_cnt);
+module bit_counter(clk, load, shift, bit_cnt);
 
 	input load;
 	input shift;
 	input clk;
-	input rst_n;
 	
 	output reg [3:0] bit_cnt;
 	

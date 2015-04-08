@@ -1,9 +1,9 @@
 module simple_cnt(rst_n, clk, count);
 
-	parameter SIZE = 21; // Counter size
+	parameter SIZE = 12; // Counter size
 	
 	input rst_n, clk;
-	output reg [SIZE:0] count;
+	output reg [SIZE-1:0] count;
 
 	always @(posedge clk, negedge rst_n) begin
 		if(rst_n == 1'b0) begin

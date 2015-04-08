@@ -52,3 +52,30 @@ Exception c0000005 has occurred at address 0053a275. Traceback:
 StackWalk failed 126
 # End of Stack Trace
 
+# Current time Mon Apr 06 15:39:53 2015
+# ModelSim Stack Trace
+# Program = vish
+# Id = "6.3"
+# Version = "2007.05"
+# Date = "May  4 2007"
+# Platform = win32
+
+Exception c0000005 has occurred at address 0053cb8d. Traceback:
+# 0    0x0053cb8d: 'Mkziplib_SafeInit + 0x11c3d'
+# 1    0x004fc82c: '<unknown (@0x4fc82c)>'
+# 2    0x00486d25: '<unknown (@0x486d25)>'
+# 3    0x004cf78a: '<unknown (@0x4cf78a)>'
+# 4    0x004cf687: '<unknown (@0x4cf687)>'
+# 5    0x004ceebb: '<unknown (@0x4ceebb)>'
+# 6    0x10057f2a: 'TclServiceIdle + 0x4a'
+# 7    0x1004b374: 'Tcl_DoOneEvent + 0x124'
+# 8    0x1002bd68: 'Tcl_VwaitObjCmd + 0x78'
+# 9    0x1000d52b: 'TclEvalObjvInternal + 0x24b'
+# 10   0x1002cad7: 'TclCompEvalObj + 0x637'
+# 11   0x1002c590: 'TclCompEvalObj + 0xf0'
+# 12   0x1000e159: 'Tcl_EvalObjEx + 0x59'
+# 13   0x02a49390: 'Itcl_EvalMemberCode + 0x210'
+# 14   0x05c54648: '<unknown (@0x5c54648)>'
+StackWalk failed 126
+# End of Stack Trace
+
