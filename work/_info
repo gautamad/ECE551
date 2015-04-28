@@ -5,513 +5,688 @@ z0
 cModel Technology
 Z0 dQ:\MS6.001\examples
 T_opt
-VaS03ogk>c0GGPLXmlVZbL3
-04 10 4 work add4bit_tb fast 0
-=1-a0d3c10da740-54d4ea19-4b-17c4
-Z1 o-quiet -auto_acc_if_foreign -work work
-Z2 tExplicit 1
-Z3 OE;O;6.3;37
-R0
+Z1 VaS03ogk>c0GGPLXmlVZbL3
+Z2 04 10 4 work add4bit_tb fast 0
+Z3 =1-a0d3c10da740-54d4ea19-4b-17c4
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 tExplicit 1
+Z6 OE;O;6.3;37
+Z7 dQ:\MS6.001\examples
 T_opt1
-VI`6FS7[:fX]Hi^3ZoBV^<0
-04 6 4 work UartTx fast 0
-=1-a0b3ccfe06f2-5522ef34-344-1868
-R1
-R2
-R3
-R0
-T_opt2
-V3hidel`_U]b`ccU`mGJKe3
-04 3 4 work PWM fast 0
-=1-a0d3c10fdb96-54d53b22-29b-1a30
-R1
-n@_opt2
-OE;O;10.3c;59
-!s110 1423260452
-R0
-vadd4bit
-Z4 !s110 1428505601
-!i10b 1
-!s100 QcTQM`OR[UV`Z]z9jQcGJ1
-I[lhmLcQ4]50n=LSJ80RRC0
-Z5 V`JN@9S9cnhjKRR_L]QIcM3
-Z6 dI:/ECE551~2
-Z7 w1423549816
-Z8 8I:/ECE551~2/src/add4bit.v
-Z9 FI:/ECE551~2/src/add4bit.v
-L0 1
-Z10 OE;L;10.3c;59
-r1
-!s85 0
-31
-Z11 !s108 1428505601.350000
-Z12 !s107 I:/ECE551~2/src/add4bit.v|
-Z13 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/add4bit.v|
-!i113 0
-Z14 o-work work -L mtiAvm
-Z15 tCoverOpt 2
-vadd4bit_tb
+Z8 VI`6FS7[:fX]Hi^3ZoBV^<0
+Z9 04 6 4 work UartTx fast 0
+Z10 =1-a0b3ccfe06f2-5522ef34-344-1868
 R4
-!i10b 1
-!s100 ]A]i81n5YfmEoWg3de7R00
-IVSkZMG8]>2a<4oJ^iE8oi0
 R5
 R6
 R7
-R8
-R9
+T_opt2
+Z11 VJlj9noSaXd=E>jRa6:dDM3
+Z12 04 10 4 work UART_rx_tb fast 0
+Z13 =1-a0d3c10e163c-552c2ba0-26a-155c
+R4
+Z14 n@_opt2
+Z15 OE;O;10.3c;59
+R7
+Z16 !s110 1428958113
+vadd4bit
+Z17 !s110 1430176010
+Z18 IUfiY8R1HXN<U<zmfj8g=B1
+Z19 V`JN@9S9cnhjKRR_L]QIcM3
+Z20 d/userspace/g/gautam/ECE551
+Z21 w1423546216
+Z22 8/userspace/g/gautam/ECE551/src/add4bit.v
+Z23 F/userspace/g/gautam/ECE551/src/add4bit.v
+L0 1
+Z24 OL;L;10.2c;57
+r1
+31
+Z25 !s108 1430176010.019941
+Z26 !s107 /userspace/g/gautam/ECE551/src/add4bit.v|
+Z27 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/add4bit.v|
+Z28 o-work work -L mtiAvm
+Z29 tCoverOpt 2
+Z30 !s100 g=PMSo6kI`b[`O]ZebC[N3
+!i10b 1
+!s85 0
+!i111 0
+vadd4bit_tb
+R17
+Z31 IGWz5mcen?TdWNHI;7h76a2
+R19
+R20
+R21
+R22
+R23
 L0 11
-R10
+R24
 r1
-!s85 0
 31
-R11
-R12
-R13
-!i113 0
-R14
-R15
-vadd8bit
-Z16 !s110 1428505603
+R25
+R26
+R27
+R28
+R29
+Z32 !s100 <dJ4;HjRM17Q`VQ6<@@lC0
 !i10b 1
-!s100 hghX7lO7FY1nWKfF21_R]3
-Ih9`3gMBY1TzC31BIb9;ol0
-R5
-R6
-R7
-Z17 8I:/ECE551~2/src/FullAdder.v
-Z18 FI:/ECE551~2/src/FullAdder.v
-L0 17
-R10
-r1
 !s85 0
-31
-Z19 !s108 1428505603.070000
-Z20 !s107 I:/ECE551~2/src/FullAdder.v|
-Z21 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FullAdder.v|
-!i113 0
-R14
-R15
-vadd8bit_tb
-Z22 !s110 1427230140
-I^<ZmmK8`ReeaiQ<m:Ma>n3
-R5
-R6
-R7
-8I:/ECE551~2/src/FA_t.v
-FI:/ECE551~2/src/FA_t.v
-L0 2
-R10
+!i111 0
+vadd8bit
+Z33 !s110 1430176012
+Z34 I0AS=:O^7GO=H<Zn=bLLLA2
+R19
+R20
+R21
+Z35 8/userspace/g/gautam/ECE551/src/FullAdder.v
+Z36 F/userspace/g/gautam/ECE551/src/FullAdder.v
+L0 17
+R24
 r1
 31
-R14
-R15
-!s100 KP1hWj<[;6mnn0i9?>lc;3
-!s108 1427230140.243000
-!s107 I:/ECE551~2/src/FA_t.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FA_t.v|
+Z37 !s108 1430176012.766181
+Z38 !s107 /userspace/g/gautam/ECE551/src/FullAdder.v|
+Z39 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/FullAdder.v|
+R28
+R29
+Z40 !s100 Hail>K4eXaX6kMESWg_HG0
+!i10b 1
+!s85 0
+!i111 0
+vadd8bit_tb
+Z41 !s110 1427230140
+Z42 I^<ZmmK8`ReeaiQ<m:Ma>n3
+R19
+Z43 dI:/ECE551~2
+Z44 w1423549816
+Z45 8I:/ECE551~2/src/FA_t.v
+Z46 FI:/ECE551~2/src/FA_t.v
+L0 2
+Z47 OE;L;10.3c;59
+r1
+31
+R28
+R29
+Z48 !s100 KP1hWj<[;6mnn0i9?>lc;3
+Z49 !s108 1427230140.243000
+Z50 !s107 I:/ECE551~2/src/FA_t.v|
+Z51 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FA_t.v|
 !i10b 1
 !s85 0
 !i113 0
 vALU
-Z23 !s110 1428505602
+Z52 IT:]DHN3D[oiEFc<hgX<`J2
+R19
+R20
+Z53 w1427232059
+Z54 8/userspace/g/gautam/ECE551/src/ALU.v
+Z55 F/userspace/g/gautam/ECE551/src/ALU.v
+L0 1
+R24
+r1
+31
+R28
+R29
+Z56 n@a@l@u
+Z57 !s110 1430176011
+Z58 !s100 `eid0IM6;JLLG1Uk0ok212
+Z59 !s108 1430176011.039894
+Z60 !s107 /userspace/g/gautam/ECE551/src/ALU.v|
+Z61 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/ALU.v|
 !i10b 1
-!s100 2E208O106^Cna_mgeg5BD1
-IoWS5mP7ca_:LaB]9@82lR2
-R5
-R6
-w1427232059
-8I:/ECE551~2/src/ALU.v
-FI:/ECE551~2/src/ALU.v
-L0 1
-R10
-r1
 !s85 0
-31
-!s108 1428505602.124000
-!s107 I:/ECE551~2/src/ALU.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/ALU.v|
-!i113 0
-R14
-R15
-n@a@l@u
+!i111 0
 vALU_tb
-R22
-IbP8CVUQF_Ca2E>iI>G6;J3
-R5
-R6
-w1424286837
-8I:/ECE551~2/src/ALU_tb.v
-FI:/ECE551~2/src/ALU_tb.v
+R41
+Z62 IbP8CVUQF_Ca2E>iI>G6;J3
+R19
+R43
+Z63 w1424286837
+Z64 8I:/ECE551~2/src/ALU_tb.v
+Z65 FI:/ECE551~2/src/ALU_tb.v
 L0 1
-R10
+R47
 r1
 31
-R14
-R15
-n@a@l@u_tb
-!s100 `]g`mQWL_i5Ag0g26CdaM2
-!s108 1427230139.986000
-!s107 I:/ECE551~2/src/ALU_tb.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/ALU_tb.v|
+R28
+R29
+Z66 n@a@l@u_tb
+Z67 !s100 `]g`mQWL_i5Ag0g26CdaM2
+Z68 !s108 1427230139.986000
+Z69 !s107 I:/ECE551~2/src/ALU_tb.v|
+Z70 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/ALU_tb.v|
 !i10b 1
 !s85 0
 !i113 0
 valu_tb
-R5
+R19
 r1
 31
-I?I8QI>Y0MJiaHoGB7WJ4N3
-R6
-w1427230176
-8I:/ECE551~2/src/alu_tb_eli.v
-FI:/ECE551~2/src/alu_tb_eli.v
+Z71 I?I8QI>Y0MJiaHoGB7WJ4N3
+R43
+Z72 w1427230176
+Z73 8I:/ECE551~2/src/alu_tb_eli.v
+Z74 FI:/ECE551~2/src/alu_tb_eli.v
 L0 1
-R10
-R14
-R15
-!s100 J814I`_FQ==EE6@LL]UmR0
-!s108 1427230197.191000
-!s107 I:/ECE551~2/src/alu_tb_eli.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/alu_tb_eli.v|
-!s85 0
-!i10b 1
-!i113 0
-vbaud_counter
-R5
-r1
-!s85 0
-31
-!i10b 1
-!s100 _T:FFZDo1JLAcPlD;=b]O3
-IfQbgZGo[Bo=5428A`S0Pg1
-R6
-Z24 w1428508690
-Z25 8I:/ECE551~2/src/UartTx.v
-Z26 FI:/ECE551~2/src/UartTx.v
-L0 94
-R10
-Z27 !s108 1428508699.124000
-Z28 !s107 I:/ECE551~2/src/UartTx.v|
-Z29 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/UartTx.v|
-!i113 0
-R14
-R15
-vbit_counter
-R5
-r1
-!s85 0
-31
-!i10b 1
-!s100 MW]lcg5?fPEzO9BK7E@EJ0
-IRVIYdcFioh?h?[6Aeh[KG2
-R6
-R24
-R25
-R26
-L0 126
-R10
-R27
+R47
 R28
 R29
-!i113 0
-R14
-R15
-vFA
-R16
+Z75 !s100 J814I`_FQ==EE6@LL]UmR0
+Z76 !s108 1427230197.191000
+Z77 !s107 I:/ECE551~2/src/alu_tb_eli.v|
+Z78 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/alu_tb_eli.v|
+!s85 0
 !i10b 1
-!s100 H<<M[i?6J]EgHQKJ7Z5=a3
-I`k8hj]WQnK<2GlLQj0]a>2
-R5
-R6
-R7
-R17
-R18
+!i113 0
+vbarcode
+Z79 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+R57
+Z80 IKVVd=n2KU4RgVLPo:]92O1
+R19
+Z81 !s105 barcode_sv_unit
+S1
+R20
+Z82 w1429302860
+Z83 8/userspace/g/gautam/ECE551/src/barcode.sv
+Z84 F/userspace/g/gautam/ECE551/src/barcode.sv
 L0 1
-R10
+R24
+r1
+31
+Z85 o-work work -sv -L mtiAvm
+R29
+Z86 !s100 69?WVI7IkX8e[7MY0[dTk2
+Z87 !s108 1430176011.456012
+Z88 !s107 /userspace/g/gautam/ECE551/src/barcode.sv|
+Z89 !s90 -reportprogress|300|-work|work|-vopt|-sv|/userspace/g/gautam/ECE551/src/barcode.sv|
+!i10b 1
+!s85 0
+!i111 0
+vbarcode_mimic
+R79
+Z90 Ig5DR>gJ71^mQ;3da>ocDT0
+R19
+Z91 !s105 barcode_mimic_sv_unit
+S1
+R20
+Z92 w1429301290
+Z93 8/userspace/g/gautam/ECE551/src/barcode_mimic.sv
+Z94 F/userspace/g/gautam/ECE551/src/barcode_mimic.sv
+L0 1
+R24
+r1
+31
+R85
+R29
+R33
+Z95 !s100 TIMMl3CCfVVUdf__MI>RC0
+Z96 !s108 1430176011.824657
+Z97 !s107 /userspace/g/gautam/ECE551/src/barcode_mimic.sv|
+Z98 !s90 -reportprogress|300|-work|work|-vopt|-sv|/userspace/g/gautam/ECE551/src/barcode_mimic.sv|
+!i10b 1
+!s85 0
+!i111 0
+vBarCode_tb
+R79
+R33
+Z99 IbJOU@:cdiOk[>lG8KQIVN3
+R19
+Z100 !s105 BarCode_tb_sv_unit
+S1
+R20
+Z101 w1429241191
+Z102 8/userspace/g/gautam/ECE551/src/BarCode_tb.sv
+Z103 F/userspace/g/gautam/ECE551/src/BarCode_tb.sv
+L0 2
+R24
+r1
+31
+R85
+R29
+Z104 n@bar@code_tb
+Z105 !s100 JI8?Vz[7CgakNN=m431RH0
+Z106 !s108 1430176012.147390
+Z107 !s107 /userspace/g/gautam/ECE551/src/BarCode_tb.sv|
+Z108 !s90 -reportprogress|300|-work|work|-vopt|-sv|/userspace/g/gautam/ECE551/src/BarCode_tb.sv|
+!i10b 1
+!s85 0
+!i111 0
+vbaud_counter
+Z109 !s110 1430176016
+!i10b 1
+!s100 f^nN49GIWaS@NC@GXlC841
+IEQfKi9djK3<4NldAB<d2F0
+R19
+R20
+Z110 w1429050698
+Z111 8/userspace/g/gautam/ECE551/src/UartTx.v
+Z112 F/userspace/g/gautam/ECE551/src/UartTx.v
+Z113 L0 111
+R24
 r1
 !s85 0
 31
+Z114 !s108 1430176015.746848
+Z115 !s107 /userspace/g/gautam/ECE551/src/UartTx.v|
+Z116 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/UartTx.v|
+!i111 0
+R28
+R29
+vbit_counter
+R109
+!i10b 1
+!s100 ^5UUY^Y171a2Va[Sa?4`L0
+I@eW?lm7knIlJm^=W?V45`1
+R19
+R20
+R110
+R111
+R112
+Z117 L0 135
+R24
+r1
+!s85 0
+31
+R114
+R115
+R116
+!i111 0
+R28
+R29
+vFA
+R33
+Z118 I^i1og;1MF@H:mmD3>NX?=0
 R19
 R20
 R21
-!i113 0
-R14
-R15
-n@f@a
-vFirstFPGA
-R23
-!i10b 1
-!s100 XPU9fLIH16ePj0[<`E:XO0
-I_mMU?7zHzAFD=30]hN@kj3
-R5
-R6
-w1424452084
-8I:/ECE551~2/src/FirstFPGA.v
-FI:/ECE551~2/src/FirstFPGA.v
-L0 1
-R10
-r1
-!s85 0
-31
-!s108 1428505602.589000
-!s107 I:/ECE551~2/src/FirstFPGA.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FirstFPGA.v|
-!i113 0
-R14
-R15
-n@first@f@p@g@a
-vLEDBlinkFPGA
-Z30 !s110 1428505604
-!i10b 1
-!s100 31Y7Z[Qj3cnOgaWnOl2f:1
-Ic<a2YVEzVf:jc4Wm>>m0L2
-R5
-R6
-w1425075602
-8I:/ECE551~2/src/LEDBlinkFPGA.v
-FI:/ECE551~2/src/LEDBlinkFPGA.v
-L0 1
-R10
-r1
-!s85 0
-31
-!s108 1428505604.010000
-!s107 I:/ECE551~2/src/LEDBlinkFPGA.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/LEDBlinkFPGA.v|
-!i113 0
-R14
-R15
-n@l@e@d@blink@f@p@g@a
-vmoto_driver_tb
-R30
-!i10b 1
-!s100 nAYh=Pf1El;1T1Ulk^F:X0
-I@WZ97A?b:j[z4inAn`EIk0
-R5
-R6
-Z31 w1425057453
-Z32 8I:/ECE551~2/src/motor_driver.v
-Z33 FI:/ECE551~2/src/motor_driver.v
-L0 26
-R10
-r1
-!s85 0
-31
-Z34 !s108 1428505604.410000
-Z35 !s107 I:/ECE551~2/src/motor_driver.v|
-Z36 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/motor_driver.v|
-!i113 0
-R14
-R15
-vmotor_driver
-R30
-!i10b 1
-!s100 USL2Am]d0nRS0JE`^Q=6l1
-I1ja2hdAei_h31;^P`Ve?g1
-R5
-R6
-R31
-R32
-R33
-L0 1
-R10
-r1
-!s85 0
-31
-R34
 R35
 R36
-!i113 0
-R14
-R15
-vMul
-Z37 !s110 1428505605
-!i10b 1
-!s100 _WBDz02onXWMiA^jE`59l0
-ITQkc_:OH2EJ7Di`57ami73
-R5
-R6
-R7
-8I:/ECE551~2/src/Mul.v
-FI:/ECE551~2/src/Mul.v
 L0 1
-R10
+R24
 r1
-!s85 0
 31
-!s108 1428505604.982000
-!s107 I:/ECE551~2/src/Mul.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/Mul.v|
-!i113 0
-R14
-R15
-n@mul
-vosc
 R37
-!i10b 1
-!s100 jA7<i6=g7Fn932R06MMDR3
-IW_`FI;VHRj?`@]QQ1M[R]3
-R5
-R6
-R7
-Z38 8I:/ECE551~2/src/Oscillating.v
-Z39 FI:/ECE551~2/src/Oscillating.v
-L0 1
-R10
-r1
-!s85 0
-31
-Z40 !s108 1428505605.407000
-Z41 !s107 I:/ECE551~2/src/Oscillating.v|
-Z42 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/Oscillating.v|
-!i113 0
-R14
-R15
-vosc_tb
-R37
-!i10b 1
-!s100 m;RY[Z2LhEGF0iaX^a8j91
-Id8B0<nz`U@CWRTz^1ERR[0
-R5
-R6
-R7
 R38
 R39
+R28
+R29
+n@f@a
+Z119 !s100 g>Knci4FmV@gndGF5d2Yc2
+!i10b 1
+!s85 0
+!i111 0
+vFirstFPGA
+R33
+Z120 I]7nBPUM2X1KYYn>_DR@dn3
+R19
+R20
+Z121 w1424448484
+Z122 8/userspace/g/gautam/ECE551/src/FirstFPGA.v
+Z123 F/userspace/g/gautam/ECE551/src/FirstFPGA.v
+L0 1
+R24
+r1
+31
+R28
+R29
+Z124 n@first@f@p@g@a
+Z125 !s100 OM`d=W7ggd]4fZF?98HTL3
+Z126 !s108 1430176012.517589
+Z127 !s107 /userspace/g/gautam/ECE551/src/FirstFPGA.v|
+Z128 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/FirstFPGA.v|
+!i10b 1
+!s85 0
+!i111 0
+vLEDBlinkFPGA
+Z129 IOD1]ZmVU3mkP57:`R4H>B0
+R19
+R20
+Z130 w1425072002
+Z131 8/userspace/g/gautam/ECE551/src/LEDBlinkFPGA.v
+Z132 F/userspace/g/gautam/ECE551/src/LEDBlinkFPGA.v
+L0 1
+R24
+r1
+31
+R28
+R29
+Z133 n@l@e@d@blink@f@p@g@a
+Z134 !s110 1430176013
+Z135 !s100 Oj]oHjbSg^J`BZf>H?mPf0
+Z136 !s108 1430176013.059105
+Z137 !s107 /userspace/g/gautam/ECE551/src/LEDBlinkFPGA.v|
+Z138 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/LEDBlinkFPGA.v|
+!i10b 1
+!s85 0
+!i111 0
+vmoto_driver_tb
+R134
+Z139 ICk11g:N3XE4BGXUIMZP?h3
+R19
+R20
+Z140 w1425053853
+Z141 8/userspace/g/gautam/ECE551/src/motor_driver.v
+Z142 F/userspace/g/gautam/ECE551/src/motor_driver.v
+L0 26
+R24
+r1
+31
+Z143 !s108 1430176013.326856
+Z144 !s107 /userspace/g/gautam/ECE551/src/motor_driver.v|
+Z145 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/motor_driver.v|
+R28
+R29
+Z146 !s100 d5D>?d:Bf5jhCdH4;f?jc1
+!i10b 1
+!s85 0
+!i111 0
+vmotor_driver
+R134
+Z147 IJg09=3K4WBO_Ne9laJPla2
+R19
+R20
+R140
+R141
+R142
+L0 1
+R24
+r1
+31
+R143
+R144
+R145
+R28
+R29
+Z148 !s100 D:e;h=znfaJ[h2[OmL3HJ3
+!i10b 1
+!s85 0
+!i111 0
+vMul
+R134
+Z149 Ieb=2[`PUd_4MXTWIW=Fo90
+R19
+R20
+R21
+Z150 8/userspace/g/gautam/ECE551/src/Mul.v
+Z151 F/userspace/g/gautam/ECE551/src/Mul.v
+L0 1
+R24
+r1
+31
+R28
+R29
+n@mul
+Z152 !s100 <]BH11ZPVle4f2^bNU2V40
+Z153 !s108 1430176013.708709
+Z154 !s107 /userspace/g/gautam/ECE551/src/Mul.v|
+Z155 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/Mul.v|
+!i10b 1
+!s85 0
+!i111 0
+vosc
+Z156 !s110 1430176014
+Z157 IkHKVUazBVH3i3CAOQ<1F12
+R19
+R20
+R21
+Z158 8/userspace/g/gautam/ECE551/src/Oscillating.v
+Z159 F/userspace/g/gautam/ECE551/src/Oscillating.v
+L0 1
+R24
+r1
+31
+Z160 !s108 1430176013.911244
+Z161 !s107 /userspace/g/gautam/ECE551/src/Oscillating.v|
+Z162 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/Oscillating.v|
+R28
+R29
+Z163 !s100 QRmzm?[F0Nj]:i9zfOB]W2
+!i10b 1
+!s85 0
+!i111 0
+vosc_tb
+R156
+Z164 ITfPPS@?>F3n]FIOjgXbHV1
+R19
+R20
+R21
+R158
+R159
 L0 14
-R10
+R24
 r1
-!s85 0
 31
-R40
-R41
-R42
-!i113 0
-R14
-R15
+R160
+R161
+R162
+R28
+R29
+Z165 !s100 DQ>:]edLjO9mL<Og0D6IW0
+!i10b 1
+!s85 0
+!i111 0
 vPWM
-Z43 !s110 1428505606
-!i10b 1
-!s100 0Y:[gPnEjX6FhGNWG_ckP2
-I<1KHL@zOdNzeUV2;n7mMD1
-R5
-R6
-Z44 w1427940603
-Z45 8I:/ECE551~2/src/PWM.v
-Z46 FI:/ECE551~2/src/PWM.v
+R156
+Z166 ICd>SoPmE]X2;YVMo<MRUN1
+R19
+R20
+Z167 w1427940603
+Z168 8/userspace/g/gautam/ECE551/src/PWM.v
+Z169 F/userspace/g/gautam/ECE551/src/PWM.v
 L0 1
-R10
+R24
 r1
-!s85 0
 31
-Z47 !s108 1428505605.934000
-Z48 !s107 I:/ECE551~2/src/PWM.v|
-Z49 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/PWM.v|
-!i113 0
-R14
-R15
-n@p@w@m
+Z170 !s108 1430176014.237055
+Z171 !s107 /userspace/g/gautam/ECE551/src/PWM.v|
+Z172 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/PWM.v|
+R28
+R29
+Z173 n@p@w@m
+Z174 !s100 jIi5F?o1`kA^@15eZIoDd3
+!i10b 1
+!s85 0
+!i111 0
 vPWM_tb
-R43
-!i10b 1
-!s100 d6>[eThcoY`hQ3JeKYeCQ1
-IW1W;ONOH5eiA=ZbD_zUcG3
-R5
-R6
-R44
-R45
-R46
+R156
+Z175 II91U4UOF:;V0UA3XLN3U<0
+R19
+R20
+R167
+R168
+R169
 L0 25
-R10
+R24
 r1
-!s85 0
 31
-R47
-R48
-R49
-!i113 0
-R14
-R15
-n@p@w@m_tb
+R170
+R171
+R172
+R28
+R29
+Z176 n@p@w@m_tb
+Z177 !s100 mZRzS5mezE>Z3<na:HM^W2
+!i10b 1
+!s85 0
+!i111 0
 vreset_synch
-R43
-!i10b 1
-!s100 9o>ziDNVL0Qm7Te^zX?2m0
-I;P]8UZC7B]<78@ndi0G7?0
-R5
-R6
-w1424288118
-8I:/ECE551~2/src/reset_synch.v
-FI:/ECE551~2/src/reset_synch.v
+R156
+Z178 ITJgPm76ZV6OcMUV7hCRRS1
+R19
+R20
+Z179 w1424284518
+Z180 8/userspace/g/gautam/ECE551/src/reset_synch.v
+Z181 F/userspace/g/gautam/ECE551/src/reset_synch.v
 L0 1
-R10
+R24
 r1
-!s85 0
 31
-!s108 1428505606.598000
-!s107 I:/ECE551~2/src/reset_synch.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/reset_synch.v|
-!i113 0
-R14
-R15
+R28
+R29
+Z182 !s100 iFEBNYzki:PMM`VAXIPM53
+Z183 !s108 1430176014.679897
+Z184 !s107 /userspace/g/gautam/ECE551/src/reset_synch.v|
+Z185 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/reset_synch.v|
+!i10b 1
+!s85 0
+!i111 0
 vshift_register
-R5
+R109
+!i10b 1
+!s100 37A?X5Ij54Yi8Pn1m]fP:0
+IjjJY1kzEOi7@EhLNBMf7c0
+R19
+R20
+R110
+R111
+R112
+L0 90
+R24
 r1
 !s85 0
 31
-!i10b 1
-!s100 6zWf7zDQT?@0T_l2n6@Hi1
-Iec_EfCRU<zambci=W4E2S1
-R6
-R24
-R25
-R26
-L0 72
-R10
-R27
+R114
+R115
+R116
+!i111 0
 R28
 R29
-!i113 0
-R14
-R15
 vsimple_cnt
-R5
-r1
-!s85 0
-31
-!i10b 1
-!s100 ;[SCKEc;Eige`mFeF2fM<1
-ILKd1[P8kP4VN:TgigPL7K1
-R6
-w1428352198
-8I:/ECE551~2/src/simple_cnt.v
-FI:/ECE551~2/src/simple_cnt.v
+Z186 IOhg>ZJOL5CM6ZKnCL09KO0
+R19
+R20
+Z187 w1428352198
+Z188 8/userspace/g/gautam/ECE551/src/simple_cnt.v
+Z189 F/userspace/g/gautam/ECE551/src/simple_cnt.v
 L0 1
-R10
-!s108 1428505607.046000
-!s107 I:/ECE551~2/src/simple_cnt.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/simple_cnt.v|
-!i113 0
-R14
-R15
-vUartTx
-R5
-r1
-!s85 0
-31
-!i10b 1
-!s100 e6R0^[VHcKWRb@@1Fj@d63
-IQ?dfL`9^e^1eAW3PVz9^^0
-R6
 R24
-R25
-R26
-L0 1
-R10
-R27
+r1
+31
 R28
 R29
+Z190 !s110 1430176015
+Z191 !s100 Rc=O0fz98aDo8I1=R@0`G3
+Z192 !s108 1430176014.913477
+Z193 !s107 /userspace/g/gautam/ECE551/src/simple_cnt.v|
+Z194 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/simple_cnt.v|
+!i10b 1
+!s85 0
+!i111 0
+vUART_rcv
+Z195 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z196 !s110 1428965748
+Z197 I>gBkUc>m9J8nI]i3:zNRa0
+R19
+S1
+R43
+Z198 w1428964908
+Z199 8I:/ECE551~2/src/UartRx_eli.sv
+Z200 FI:/ECE551~2/src/UartRx_eli.sv
+L0 1
+R47
+r1
+31
+R85
+R29
+Z201 n@u@a@r@t_rcv
+Z202 !s100 n[9Za>EE7Z>z]DZSU;oKO2
+Z203 !s105 UartRx_eli_sv_unit
+Z204 !s108 1428965748.312000
+Z205 !s107 I:/ECE551~2/src/UartRx_eli.sv|
+Z206 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551~2/src/UartRx_eli.sv|
+!i10b 1
+!s85 0
 !i113 0
-R14
-R15
-n@uart@tx
+vUART_rx_tb
+R190
+Z207 ID_gzIjmb;>8o@]d[8WJn:2
+R19
+R20
+Z208 w1429049797
+Z209 8/userspace/g/gautam/ECE551/src/UartTb.v
+Z210 F/userspace/g/gautam/ECE551/src/UartTb.v
+L0 1
+R24
+r1
+31
+R28
+R29
+Z211 n@u@a@r@t_rx_tb
+!i10b 1
+Z212 !s100 j7^Fm;C9R?S@HG3no69h;3
+!s85 0
+Z213 !s108 1430176015.468835
+Z214 !s107 /userspace/g/gautam/ECE551/src/UartTb.v|
+Z215 !s90 -reportprogress|300|-work|work|-vopt|/userspace/g/gautam/ECE551/src/UartTb.v|
+!i111 0
+vUART_tx
+R195
+R196
+Z216 I4;Wb<gCJBlD9H>b=@5HZ^1
+R19
+S1
+R43
+Z217 w1428964656
+Z218 8I:/ECE551~2/UartTx_eli.sv
+Z219 FI:/ECE551~2/UartTx_eli.sv
+L0 1
+R47
+r1
+31
+R85
+R29
+Z220 n@u@a@r@t_tx
+Z221 !s100 maAZodoOk5M]JB]cTK_2c1
+Z222 !s105 UartTx_eli_sv_unit
+Z223 !s108 1428965748.033000
+Z224 !s107 I:/ECE551~2/UartTx_eli.sv|
+Z225 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551~2/UartTx_eli.sv|
+!i10b 1
+!s85 0
+!i113 0
+vUartRx
+R79
+R190
+Z226 I=NXzMS8EzZj5_zD76NUA=1
+R19
+Z227 !s105 UartRx_sv_unit
+S1
+R20
+Z228 w1429051442
+Z229 8/userspace/g/gautam/ECE551/src/UartRx.sv
+Z230 F/userspace/g/gautam/ECE551/src/UartRx.sv
+L0 1
+R24
+r1
+31
+R85
+R29
+Z231 n@uart@rx
+Z232 !s100 ;zE5J]Rb>H41DjGP9ZNHk3
+Z233 !s108 1430176015.196338
+Z234 !s107 /userspace/g/gautam/ECE551/src/UartRx.sv|
+Z235 !s90 -reportprogress|300|-work|work|-vopt|-sv|/userspace/g/gautam/ECE551/src/UartRx.sv|
+!i10b 1
+!s85 0
+!i111 0
+vUartTx
+R190
+!i10b 1
+!s100 ch@jYD_I;k[T?V=nHjkPY3
+IjK3Pk1g@U0eSSd]IQ2knY2
+R19
+R20
+R110
+R111
+R112
+L0 1
+R24
+r1
+!s85 0
+31
+R114
+R115
+R116
+!i111 0
+R28
+R29
+Z236 n@uart@tx

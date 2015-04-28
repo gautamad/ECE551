@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : -20.913
+TNS   : -249.932
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -12.691
+TNS   : -610.323
+
+Type  : Slow 1200mV 85C Model Setup 'RST_n'
+Slack : -1.675
+TNS   : -1.675
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'RST_n'
+Slack : 1.546
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'button_smpl:iButton_smpl|q1'
+Slack : -3.084
+TNS   : -7.896
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -2.287
+TNS   : -196.501
+
+Type  : Slow 1200mV 85C Model Recovery 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : 0.073
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : -0.665
+TNS   : -9.686
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 0.817
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'button_smpl:iButton_smpl|q1'
+Slack : 2.600
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -117.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RST_n'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : -1.000
+TNS   : -23.753
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'button_smpl:iButton_smpl|q1'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : -18.504
+TNS   : -221.078
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -11.295
+TNS   : -538.340
+
+Type  : Slow 1200mV 0C Model Setup 'RST_n'
+Slack : -1.419
+TNS   : -1.419
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.057
+TNS   : -0.057
+
+Type  : Slow 1200mV 0C Model Hold 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'RST_n'
+Slack : 1.410
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'button_smpl:iButton_smpl|q1'
+Slack : -2.773
+TNS   : -7.083
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -2.032
+TNS   : -173.555
+
+Type  : Slow 1200mV 0C Model Recovery 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : 0.027
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : -0.587
+TNS   : -8.097
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 0.740
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'button_smpl:iButton_smpl|q1'
+Slack : 2.349
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -117.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RST_n'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : -1.000
+TNS   : -20.633
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'button_smpl:iButton_smpl|q1'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : -11.196
+TNS   : -133.691
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -7.108
+TNS   : -316.650
+
+Type  : Fast 1200mV 0C Model Setup 'RST_n'
+Slack : -1.209
+TNS   : -1.209
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.027
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'RST_n'
+Slack : 1.548
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'button_smpl:iButton_smpl|q1'
+Slack : -1.718
+TNS   : -4.408
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -1.504
+TNS   : -129.496
+
+Type  : Fast 1200mV 0C Model Recovery 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : -0.324
+TNS   : -4.470
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'button_smpl:iButton_smpl|q1'
+Slack : 1.606
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -146.594
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RST_n'
+Slack : -3.000
+TNS   : -3.296
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'barcode_mimic:BCM1|period_cnt[0]'
+Slack : -1.000
+TNS   : -17.913
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'button_smpl:iButton_smpl|q1'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

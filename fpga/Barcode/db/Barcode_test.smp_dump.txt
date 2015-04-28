@@ -1,0 +1,18 @@
+
+State Machine - |Barcode_test|barcode_mimic:BCM1|state
+Name state.TX state.WAIT_FULL state.STRT_BIT state.IDLE 
+state.IDLE 0 0 0 0 
+state.STRT_BIT 0 0 1 1 
+state.WAIT_FULL 0 1 0 1 
+state.TX 1 0 0 1 
+
+State Machine - |Barcode_test|barcode:BCR1|state
+Name state.BC_CLEAR_NEGEDGE state.WAIT_CLEAR_NEGEDGE state.CLEAR state.RCVING state.WAIT_NEGEDGE state.BC_NEGEDGE state.START state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.START 0 0 0 0 0 0 1 1 
+state.BC_NEGEDGE 0 0 0 0 0 1 0 1 
+state.WAIT_NEGEDGE 0 0 0 0 1 0 0 1 
+state.RCVING 0 0 0 1 0 0 0 1 
+state.CLEAR 0 0 1 0 0 0 0 1 
+state.WAIT_CLEAR_NEGEDGE 0 1 0 0 0 0 0 1 
+state.BC_CLEAR_NEGEDGE 1 0 0 0 0 0 0 1 

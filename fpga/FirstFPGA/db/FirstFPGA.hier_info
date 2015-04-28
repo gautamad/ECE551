@@ -1,0 +1,96 @@
+|LEDBlinkFPGA
+clk => clk.IN3
+RST_n => RST_n.IN1
+LEDs[0] << LEDs.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[1] << LEDs.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[2] << LEDs.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[3] << LEDs.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[4] << LEDs.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[5] << LEDs.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[6] << LEDs.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[7] << LEDs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LEDBlinkFPGA|reset_synch:rstsync
+RST_n => rst_n~reg0.ALOAD
+RST_n => q0.ACLR
+clk => rst_n~reg0.CLK
+clk => q0.CLK
+rst_n <= rst_n~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LEDBlinkFPGA|simple_cnt:counter
+rst_n => count[0]~reg0.ACLR
+rst_n => count[1]~reg0.ACLR
+rst_n => count[2]~reg0.ACLR
+rst_n => count[3]~reg0.ACLR
+rst_n => count[4]~reg0.ACLR
+rst_n => count[5]~reg0.ACLR
+rst_n => count[6]~reg0.ACLR
+rst_n => count[7]~reg0.ACLR
+rst_n => count[8]~reg0.ACLR
+rst_n => count[9]~reg0.ACLR
+rst_n => count[10]~reg0.ACLR
+rst_n => count[11]~reg0.ACLR
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+clk => count[4]~reg0.CLK
+clk => count[5]~reg0.CLK
+clk => count[6]~reg0.CLK
+clk => count[7]~reg0.CLK
+clk => count[8]~reg0.CLK
+clk => count[9]~reg0.CLK
+clk => count[10]~reg0.CLK
+clk => count[11]~reg0.CLK
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[8] <= count[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[9] <= count[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[10] <= count[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[11] <= count[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LEDBlinkFPGA|PWM:led_pwm
+clk => PWM_sig~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+rst_n => count[0].ACLR
+rst_n => count[1].ACLR
+rst_n => count[2].ACLR
+rst_n => count[3].ACLR
+rst_n => count[4].ACLR
+rst_n => count[5].ACLR
+rst_n => count[6].ACLR
+rst_n => count[7].ACLR
+rst_n => count[8].ACLR
+rst_n => count[9].ACLR
+rst_n => PWM_sig~reg0.ACLR
+duty[0] => LessThan0.IN10
+duty[1] => LessThan0.IN9
+duty[2] => LessThan0.IN8
+duty[3] => LessThan0.IN7
+duty[4] => LessThan0.IN6
+duty[5] => LessThan0.IN5
+duty[6] => LessThan0.IN4
+duty[7] => LessThan0.IN3
+duty[8] => LessThan0.IN2
+duty[9] => LessThan0.IN1
+PWM_sig <= PWM_sig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

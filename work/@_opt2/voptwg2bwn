@@ -1,0 +1,567 @@
+m255
+K3
+z0
+13
+cModel Technology
+Z0 dQ:\MS6.001\examples
+T_opt
+VaS03ogk>c0GGPLXmlVZbL3
+04 10 4 work add4bit_tb fast 0
+=1-a0d3c10da740-54d4ea19-4b-17c4
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tExplicit 1
+Z3 OE;O;6.3;37
+R0
+T_opt1
+VI`6FS7[:fX]Hi^3ZoBV^<0
+04 6 4 work UartTx fast 0
+=1-a0b3ccfe06f2-5522ef34-344-1868
+R1
+R2
+R3
+R0
+T_opt2
+!s110 1428958113
+VJlj9noSaXd=E>jRa6:dDM3
+04 10 4 work UART_rx_tb fast 0
+=1-a0d3c10e163c-552c2ba0-26a-155c
+R1
+n@_opt2
+OE;O;10.3c;59
+vadd4bit
+Z4 !s110 1428505601
+!i10b 1
+!s100 QcTQM`OR[UV`Z]z9jQcGJ1
+I[lhmLcQ4]50n=LSJ80RRC0
+Z5 V`JN@9S9cnhjKRR_L]QIcM3
+Z6 dI:/ECE551~2
+Z7 w1423549816
+Z8 8I:/ECE551~2/src/add4bit.v
+Z9 FI:/ECE551~2/src/add4bit.v
+L0 1
+Z10 OE;L;10.3c;59
+r1
+!s85 0
+31
+Z11 !s108 1428505601.350000
+Z12 !s107 I:/ECE551~2/src/add4bit.v|
+Z13 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/add4bit.v|
+!i113 0
+Z14 o-work work -L mtiAvm
+Z15 tCoverOpt 2
+vadd4bit_tb
+R4
+!i10b 1
+!s100 ]A]i81n5YfmEoWg3de7R00
+IVSkZMG8]>2a<4oJ^iE8oi0
+R5
+R6
+R7
+R8
+R9
+L0 11
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+vadd8bit
+Z16 !s110 1428505603
+!i10b 1
+!s100 hghX7lO7FY1nWKfF21_R]3
+Ih9`3gMBY1TzC31BIb9;ol0
+R5
+R6
+R7
+Z17 8I:/ECE551~2/src/FullAdder.v
+Z18 FI:/ECE551~2/src/FullAdder.v
+L0 17
+R10
+r1
+!s85 0
+31
+Z19 !s108 1428505603.070000
+Z20 !s107 I:/ECE551~2/src/FullAdder.v|
+Z21 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FullAdder.v|
+!i113 0
+R14
+R15
+vadd8bit_tb
+Z22 !s110 1427230140
+I^<ZmmK8`ReeaiQ<m:Ma>n3
+R5
+R6
+R7
+8I:/ECE551~2/src/FA_t.v
+FI:/ECE551~2/src/FA_t.v
+L0 2
+R10
+r1
+31
+R14
+R15
+!s100 KP1hWj<[;6mnn0i9?>lc;3
+!s108 1427230140.243000
+!s107 I:/ECE551~2/src/FA_t.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FA_t.v|
+!i10b 1
+!s85 0
+!i113 0
+vALU
+Z23 !s110 1428505602
+!i10b 1
+!s100 2E208O106^Cna_mgeg5BD1
+IoWS5mP7ca_:LaB]9@82lR2
+R5
+R6
+w1427232059
+8I:/ECE551~2/src/ALU.v
+FI:/ECE551~2/src/ALU.v
+L0 1
+R10
+r1
+!s85 0
+31
+!s108 1428505602.124000
+!s107 I:/ECE551~2/src/ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/ALU.v|
+!i113 0
+R14
+R15
+n@a@l@u
+valu_tb
+R5
+r1
+31
+I?I8QI>Y0MJiaHoGB7WJ4N3
+R6
+w1427230176
+8I:/ECE551~2/src/alu_tb_eli.v
+FI:/ECE551~2/src/alu_tb_eli.v
+L0 1
+R10
+R14
+R15
+!s100 J814I`_FQ==EE6@LL]UmR0
+!s108 1427230197.191000
+!s107 I:/ECE551~2/src/alu_tb_eli.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/alu_tb_eli.v|
+!s85 0
+!i10b 1
+!i113 0
+vALU_tb
+R22
+IbP8CVUQF_Ca2E>iI>G6;J3
+R5
+R6
+w1424286837
+8I:/ECE551~2/src/ALU_tb.v
+FI:/ECE551~2/src/ALU_tb.v
+L0 1
+R10
+r1
+31
+R14
+R15
+n@a@l@u_tb
+!s100 `]g`mQWL_i5Ag0g26CdaM2
+!s108 1427230139.986000
+!s107 I:/ECE551~2/src/ALU_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/ALU_tb.v|
+!i10b 1
+!s85 0
+!i113 0
+vbaud_counter
+Z24 !s110 1428957883
+!i10b 1
+!s100 chBmg=WM?fnRkNL;^:D590
+I2jAW9JJ@7A^Bc6no2JD?^0
+R5
+R6
+Z25 w1428545236
+Z26 8I:/ECE551~2/src/UartTx.v
+Z27 FI:/ECE551~2/src/UartTx.v
+L0 108
+R10
+r1
+!s85 0
+31
+Z28 !s108 1428957882.622000
+Z29 !s107 I:/ECE551~2/src/UartTx.v|
+Z30 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/UartTx.v|
+!i113 0
+R14
+R15
+vbit_counter
+R24
+!i10b 1
+!s100 oB>jbciK[ObLe[CQzKbY23
+IB?31]GhN<XfYB6KiRdHO]1
+R5
+R6
+R25
+R26
+R27
+L0 139
+R10
+r1
+!s85 0
+31
+R28
+R29
+R30
+!i113 0
+R14
+R15
+vFA
+R16
+!i10b 1
+!s100 H<<M[i?6J]EgHQKJ7Z5=a3
+I`k8hj]WQnK<2GlLQj0]a>2
+R5
+R6
+R7
+R17
+R18
+L0 1
+R10
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 0
+R14
+R15
+n@f@a
+vFirstFPGA
+R23
+!i10b 1
+!s100 XPU9fLIH16ePj0[<`E:XO0
+I_mMU?7zHzAFD=30]hN@kj3
+R5
+R6
+w1424452084
+8I:/ECE551~2/src/FirstFPGA.v
+FI:/ECE551~2/src/FirstFPGA.v
+L0 1
+R10
+r1
+!s85 0
+31
+!s108 1428505602.589000
+!s107 I:/ECE551~2/src/FirstFPGA.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/FirstFPGA.v|
+!i113 0
+R14
+R15
+n@first@f@p@g@a
+vLEDBlinkFPGA
+Z31 !s110 1428505604
+!i10b 1
+!s100 31Y7Z[Qj3cnOgaWnOl2f:1
+Ic<a2YVEzVf:jc4Wm>>m0L2
+R5
+R6
+w1425075602
+8I:/ECE551~2/src/LEDBlinkFPGA.v
+FI:/ECE551~2/src/LEDBlinkFPGA.v
+L0 1
+R10
+r1
+!s85 0
+31
+!s108 1428505604.010000
+!s107 I:/ECE551~2/src/LEDBlinkFPGA.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/LEDBlinkFPGA.v|
+!i113 0
+R14
+R15
+n@l@e@d@blink@f@p@g@a
+vmoto_driver_tb
+R31
+!i10b 1
+!s100 nAYh=Pf1El;1T1Ulk^F:X0
+I@WZ97A?b:j[z4inAn`EIk0
+R5
+R6
+Z32 w1425057453
+Z33 8I:/ECE551~2/src/motor_driver.v
+Z34 FI:/ECE551~2/src/motor_driver.v
+L0 26
+R10
+r1
+!s85 0
+31
+Z35 !s108 1428505604.410000
+Z36 !s107 I:/ECE551~2/src/motor_driver.v|
+Z37 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/motor_driver.v|
+!i113 0
+R14
+R15
+vmotor_driver
+R31
+!i10b 1
+!s100 USL2Am]d0nRS0JE`^Q=6l1
+I1ja2hdAei_h31;^P`Ve?g1
+R5
+R6
+R32
+R33
+R34
+L0 1
+R10
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 0
+R14
+R15
+vMul
+Z38 !s110 1428505605
+!i10b 1
+!s100 _WBDz02onXWMiA^jE`59l0
+ITQkc_:OH2EJ7Di`57ami73
+R5
+R6
+R7
+8I:/ECE551~2/src/Mul.v
+FI:/ECE551~2/src/Mul.v
+L0 1
+R10
+r1
+!s85 0
+31
+!s108 1428505604.982000
+!s107 I:/ECE551~2/src/Mul.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/Mul.v|
+!i113 0
+R14
+R15
+n@mul
+vosc
+R38
+!i10b 1
+!s100 jA7<i6=g7Fn932R06MMDR3
+IW_`FI;VHRj?`@]QQ1M[R]3
+R5
+R6
+R7
+Z39 8I:/ECE551~2/src/Oscillating.v
+Z40 FI:/ECE551~2/src/Oscillating.v
+L0 1
+R10
+r1
+!s85 0
+31
+Z41 !s108 1428505605.407000
+Z42 !s107 I:/ECE551~2/src/Oscillating.v|
+Z43 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/Oscillating.v|
+!i113 0
+R14
+R15
+vosc_tb
+R38
+!i10b 1
+!s100 m;RY[Z2LhEGF0iaX^a8j91
+Id8B0<nz`U@CWRTz^1ERR[0
+R5
+R6
+R7
+R39
+R40
+L0 14
+R10
+r1
+!s85 0
+31
+R41
+R42
+R43
+!i113 0
+R14
+R15
+vPWM
+Z44 !s110 1428505606
+!i10b 1
+!s100 0Y:[gPnEjX6FhGNWG_ckP2
+I<1KHL@zOdNzeUV2;n7mMD1
+R5
+R6
+Z45 w1427940603
+Z46 8I:/ECE551~2/src/PWM.v
+Z47 FI:/ECE551~2/src/PWM.v
+L0 1
+R10
+r1
+!s85 0
+31
+Z48 !s108 1428505605.934000
+Z49 !s107 I:/ECE551~2/src/PWM.v|
+Z50 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/PWM.v|
+!i113 0
+R14
+R15
+n@p@w@m
+vPWM_tb
+R44
+!i10b 1
+!s100 d6>[eThcoY`hQ3JeKYeCQ1
+IW1W;ONOH5eiA=ZbD_zUcG3
+R5
+R6
+R45
+R46
+R47
+L0 25
+R10
+r1
+!s85 0
+31
+R48
+R49
+R50
+!i113 0
+R14
+R15
+n@p@w@m_tb
+vreset_synch
+R44
+!i10b 1
+!s100 9o>ziDNVL0Qm7Te^zX?2m0
+I;P]8UZC7B]<78@ndi0G7?0
+R5
+R6
+w1424288118
+8I:/ECE551~2/src/reset_synch.v
+FI:/ECE551~2/src/reset_synch.v
+L0 1
+R10
+r1
+!s85 0
+31
+!s108 1428505606.598000
+!s107 I:/ECE551~2/src/reset_synch.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/reset_synch.v|
+!i113 0
+R14
+R15
+vshift_register
+R24
+!i10b 1
+!s100 gVH1k2XV@2`;i;NES1Jaj1
+I;<_hzEo?k9EnE]Ig>zh032
+R5
+R6
+R25
+R26
+R27
+L0 86
+R10
+r1
+!s85 0
+31
+R28
+R29
+R30
+!i113 0
+R14
+R15
+vsimple_cnt
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;[SCKEc;Eige`mFeF2fM<1
+ILKd1[P8kP4VN:TgigPL7K1
+R6
+w1428352198
+8I:/ECE551~2/src/simple_cnt.v
+FI:/ECE551~2/src/simple_cnt.v
+L0 1
+R10
+!s108 1428505607.046000
+!s107 I:/ECE551~2/src/simple_cnt.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/simple_cnt.v|
+!i113 0
+R14
+R15
+vUART_rx_tb
+!s110 1428958098
+!i10b 1
+!s100 ZMHQHzkkI>>7G^55=Rj=J3
+IjT:mGk5?4bDnOCW6CB;D23
+R5
+R6
+w1428958093
+8I:/ECE551~2/src/UartTb.v
+FI:/ECE551~2/src/UartTb.v
+L0 1
+R10
+r1
+!s85 0
+31
+!s108 1428958098.349000
+!s107 I:/ECE551~2/src/UartTb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ECE551~2/src/UartTb.v|
+!i113 0
+R14
+R15
+n@u@a@r@t_rx_tb
+vUartRx
+DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1428957973
+!i10b 1
+!s100 aVNCMd2j;<1hbCQ_ncLPM1
+IN;?d:DAFfkNc7Z?4ZLEJd0
+R5
+!s105 UartRx_sv_unit
+S1
+R6
+w1428957968
+8I:/ECE551~2/src/UartRx.sv
+FI:/ECE551~2/src/UartRx.sv
+L0 1
+R10
+r1
+!s85 0
+31
+!s108 1428957973.257000
+!s107 I:/ECE551~2/src/UartRx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551~2/src/UartRx.sv|
+!i113 0
+o-work work -sv -L mtiAvm
+R15
+n@uart@rx
+vUartTx
+!s110 1428957882
+!i10b 1
+!s100 ff7lH:EFZ^^XQ>52NznWG1
+Imb3_7zogE9;KXBM36I=GX2
+R5
+R6
+R25
+R26
+R27
+L0 1
+R10
+r1
+!s85 0
+31
+R28
+R29
+R30
+!i113 0
+R14
+R15
+n@uart@tx

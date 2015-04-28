@@ -1,0 +1,217 @@
+module barcode(clk, rst_n, BC, ID_vld, ID, clr_ID_vld);
+	input BC;
+	input clr_ID_vld;
+	input clk, rst_n;
+	
+	output [7:0] ID;
+	output ID_vld;
+	
+	reg BC_floped;
+	reg bc_1, bc_2, bc_3, bc_4;
+
+	reg load_strt_cnt, strt_cnt;
+	reg [21:0] start_counter;
+	reg load, shift;
+	reg [3:0] bit_cnt;
+	reg [21:0] baud_cnt;
+	reg ID_done;
+	reg [7:0] ID_shft_reg;
+	reg recving;
+	reg bc_neg;
+	reg [22:0] glitch_timer;
+	reg SMPL_MAX_COUNT;	
+	reg glitch_strt_cnt;
+		
+	wire set, clr; // BC_filtered signals
+	wire bc_f;
+	wire [3:0] bit_cnt_val;
+	wire [21:0] start_counter_val;
+	wire [21:0] baud_cnt_val;
+	wire [7:0] ID_shft_reg_val;
+	wire [22:0] gltich_timer_val;
+	
+	assign set = bc_2 & bc_3 & bc_4;
+	assign clr = ~(bc_2 | bc_3 | bc_4);
+	assign bc_f = (set)? 1 : (clr) ? 0 : 0;
+	
+	always_ff @(posedge clk, negedge rst_n) begin
+		if(!rst_n) begin 
+			bc_1 <= 1;
+			bc_2 <= 1;
+			bc_3 <= 1;
+			bc_4 <= 1;
+			BC_floped <= 1;
+		end
+		else begin
+			bc_1 <= BC;
+			bc_2 <= bc_1;
+			bc_3 <= bc_2;
+			bc_4 <= bc_3;
+			BC_floped <= bc_f;
+		end
+	end
+	// State assignment
+	typedef enum reg[2:0]{IDLE, START, BC_NEGEDGE, WAIT_NEGEDGE, RCVING, CLEAR, WAIT_CLEAR_NEGEDGE, BC_CLEAR_NEGEDGE} state_t;
+	
+	state_t state, next_state;
+	
+	// Bit count increment logic
+	assign bit_cnt_val = (load)? 4'b0000: (shift)? bit_cnt + 1: bit_cnt;
+	
+	//Capture half the time of start bit
+	assign start_counter_val = (load_strt_cnt) ? 22'b0 : (strt_cnt) ? start_counter + 1 : start_counter;
+	
+	assign baud_cnt_val = (load)? start_counter: (recving)? baud_cnt - 1: baud_cnt;
+
+	assign ID_shft_reg_val = (load)? 8'h00: (shift)? {ID_shft_reg[6:0], BC_floped} : ID_shft_reg;
+
+	assign glitch_timer_val = (load_strt_cnt)? 23'b0 : (glitch_strt_cnt) ? glitch_timer + 1: glitch_timer;
+	
+	// ID VALID OUTPUT
+	assign ID_vld = (ID_done) ? ((~(ID[7] | ID[6]))? 1 : 0) : 0;
+	
+	// BARCODE ID OUTPUT
+	assign ID = ID_shft_reg;
+	
+	
+	always_ff @(posedge clk, negedge rst_n) begin
+		if(!rst_n) begin
+			bit_cnt <= 4'h0;
+			baud_cnt <= 22'b0;
+			ID_shft_reg <= 8'b0;
+			start_counter <= 22'b0;
+			glitch_timer <= 23'b0;
+			state <= IDLE;
+		end
+		else begin
+			bit_cnt <= bit_cnt_val;
+			baud_cnt <= (shift)? start_counter : baud_cnt_val;
+			ID_shft_reg <= ID_shft_reg_val;
+			start_counter <= start_counter_val;
+			glitch_timer <= glitch_timer_val;
+			state <= next_state;
+		end
+	end
+
+		
+	// State Transition logic and State machine outputs
+	always_comb begin
+		//set outputs to zero
+		load_strt_cnt = 0;
+		load = 0;
+		strt_cnt = 0;
+		shift = 0;
+		ID_done = 0;
+	  	recving = 0;
+	  	glitch_strt_cnt = 0;
+	  	SMPL_MAX_COUNT = 0;
+	  	next_state = IDLE;
+		case(state) 
+	
+		IDLE: begin
+				if(!BC_floped) begin
+					load_strt_cnt = 1;
+					next_state = START;
+				end
+				else
+					next_state = IDLE;
+		end
+		
+		START: begin
+				strt_cnt = 1;
+				if(BC_floped) begin
+					strt_cnt = 0;
+					load = 1;
+					next_state = BC_NEGEDGE;
+				end
+				else
+					next_state = START;
+		end
+		
+		BC_NEGEDGE: begin
+		      glitch_strt_cnt = 1;
+				if(!BC_floped)
+					 next_state = RCVING;
+			   else if(glitch_timer_val == {start_counter,1'b0}) begin
+			       SMPL_MAX_COUNT = 1;
+			       next_state = IDLE;
+			   end
+				else if(bit_cnt == 8) begin
+					   ID_done = 1;
+						next_state = CLEAR;
+				end
+				else
+					next_state = BC_NEGEDGE;			
+	 	 end
+
+		WAIT_NEGEDGE: begin
+			if(BC_floped)
+			  next_state = BC_NEGEDGE;
+			  else if(bit_cnt == 8) begin
+				ID_done = 1;
+				next_state = CLEAR;
+			  end
+			else
+			 	next_state = WAIT_NEGEDGE;
+	  	end
+
+		RCVING: begin
+			  recving = 1;
+				if(!baud_cnt) begin
+					shift = 1;
+					if(BC_floped) 
+					  next_state = BC_NEGEDGE;
+				  	else
+					  next_state = WAIT_NEGEDGE;
+					
+			  	 end
+				else
+				 next_state = RCVING;
+		end
+		
+		CLEAR: begin
+				if(clr_ID_vld) begin
+					ID_done = 0;
+					next_state = IDLE;
+				end
+				else 
+					ID_done = 1;
+				if(!BC_floped) 
+				    next_state = WAIT_CLEAR_NEGEDGE;
+				else
+				    next_state = BC_CLEAR_NEGEDGE;	
+				
+		end
+		
+		WAIT_CLEAR_NEGEDGE: begin
+		       if(clr_ID_vld) begin
+					ID_done = 0;
+					next_state = IDLE;
+				end
+				else if(BC_floped)
+				   next_state = BC_CLEAR_NEGEDGE;
+				else begin
+				   ID_done = 1;
+				   next_state = WAIT_CLEAR_NEGEDGE;
+				end
+				      
+		 end
+		   
+		 BC_CLEAR_NEGEDGE: begin
+		     if(clr_ID_vld) begin
+				ID_done = 0;
+				next_state = IDLE;
+			end
+			else if(!BC_floped)
+			   next_state = IDLE;
+			else begin
+			   ID_done = 1;
+			   next_state = BC_CLEAR_NEGEDGE;
+			end
+		end
+		
+		default: next_state = IDLE;
+		
+		endcase
+	end
+endmodule

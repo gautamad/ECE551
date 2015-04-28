@@ -1,0 +1,797 @@
+# //  Questa Sim-64
+# //  Version 10.3 linux_x86_64 Jan  6 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+file mkdir /userspace/g/gautam/Questa_ECE551
+# Loading project linefollower
+# Compile of barcode.sv was successful.
+vsim work.barcode
+# vsim work.barcode 
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode
+add wave -position insertpoint  \
+sim/:barcode:BC \
+sim/:barcode:clr_ID_vld \
+sim/:barcode:clk \
+sim/:barcode:rst_n \
+sim/:barcode:ID \
+sim/:barcode:ID_vld \
+sim/:barcode:BC_floped \
+sim/:barcode:bc_1 \
+sim/:barcode:bc_2 \
+sim/:barcode:bc_3 \
+sim/:barcode:bc_4 \
+sim/:barcode:load_strt_cnt \
+sim/:barcode:strt_cnt \
+sim/:barcode:start_counter \
+sim/:barcode:load \
+sim/:barcode:shift \
+sim/:barcode:bit_cnt \
+sim/:barcode:baud_cnt \
+sim/:barcode:ID_done \
+sim/:barcode:ID_shft_reg \
+sim/:barcode:recving \
+sim/:barcode:set \
+sim/:barcode:clr \
+sim/:barcode:bc_f \
+sim/:barcode:bit_cnt_val \
+sim/:barcode:start_counter_val \
+sim/:barcode:baud_cnt_val \
+sim/:barcode:ID_shft_reg_val \
+sim/:barcode:state \
+sim/:barcode:next_state
+force -freeze sim/:barcode:clk 1 0, 0 {50 ps} -r 100
+force -freeze sim/:barcode:rst_n 0 0
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:clr_ID_vld 0 0
+run
+force -freeze sim/:barcode:rst_n 10 0
+run
+force -freeze sim/:barcode:rst_n 1 0
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode
+force -freeze sim/:barcode:clk 1 0, 0 {50 ps} -r 100
+force -freeze sim/:barcode:rst_n 0 0
+force -freeze sim/:barcode:BC 1 0
+run
+run
+force -freeze sim/:barcode:clr_ID_vld 0 0
+run
+force -freeze sim/:barcode:rst_n 1 0
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+force -freeze sim/:barcode:BC 1 0
+run
+# Compile of barcode.sv failed with 1 errors.
+# Compile of barcode.sv was successful.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode
+force -freeze sim/:barcode:BC 1 0
+force -freeze sim/:barcode:clr_ID_vld 0 0
+force -freeze sim/:barcode:clk 1 0, 0 {50 ps} -r 100
+force -freeze sim/:barcode:rst_n 0 0
+run
+run
+force -freeze sim/:barcode:rst_n 1 0
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+# Compile of barcode.sv was successful.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode
+force -freeze sim/:barcode:clk 1 0, 0 {50 ps} -r 100
+force -freeze sim/:barcode:BC 1 0
+force -freeze sim/:barcode:clr_ID_vld 0 0
+force -freeze sim/:barcode:rst_n 0 0
+run
+run
+force -freeze sim/:barcode:rst_n 1 0
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+run
+# Compile of barcode.sv was successful.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode
+force -freeze sim/:barcode:clk 1 0, 0 {50 ps} -r 100
+force -freeze sim/:barcode:rst_n 0 0
+force -freeze sim/:barcode:BC 1 0
+force -freeze sim/:barcode:clr_ID_vld 0 0
+run
+run
+run
+force -freeze sim/:barcode:rst_n 1 0
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+run
+run
+run
+run
+# Compile of barcode.sv was successful.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode
+force -freeze sim/:barcode:clk 1 0, 0 {50 ps} -r 100
+force -freeze sim/:barcode:rst_n 0 0
+force -freeze sim/:barcode:BC 1 0
+force -freeze sim/:barcode:clr_ID_vld 0 0
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:rst_n 1 0
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of barcode.sv failed with 1 errors.
+# Compile of barcode.sv failed with 1 errors.
+# Compile of barcode.sv failed with 1 errors.
+# Compile of barcode.sv failed with 1 errors.
+# Compile of barcode.sv was successful.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode
+force -freeze sim/:barcode:clk 1 0, 0 {50 ps} -r 100
+force -freeze sim/:barcode:rst_n 0 0
+force -freeze sim/:barcode:BC 1 0
+force -freeze sim/:barcode:clr_ID_vld 0 0
+run
+run
+run
+force -freeze sim/:barcode:rst_n 1 0
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 0 0
+run
+run
+run
+run
+run
+force -freeze sim/:barcode:BC 1 0
+run
+force -freeze sim/:barcode:BC 0 0
+run
+force -freeze sim/:barcode:BC 1 0
+run
+run
+run
+run
+quit -sim
+# Compile of BarCode_tb.sv was successful.
+vsim work.BarCode_tb
+# vsim work.BarCode_tb 
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# ** Error: (vsim-3033) /userspace/g/gautam/ECE551/src/BarCode_tb.sv(15): Instantiation of 'barcode_mimic' failed. The design unit was not found.
+#         Region: :BarCode_tb
+#         Searched libraries:
+#             /userspace/g/gautam/Questa_ECE551/work
+# Error loading design
+# Load canceled
+# Compile of barcode_mimic.sv was successful.
+# Compile of BarCode_tb.sv was successful.
+vsim work.BarCode_tb
+# vsim work.BarCode_tb 
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# Loading work.barcode_mimic
+# ** Warning: (vsim-3008) /userspace/g/gautam/ECE551/src/BarCode_tb.sv(115): [CNNODP] - Component name (SMPL_COUNT_MAX) is not on a downward path.
+#         Region: :BarCode_tb
+# ** Error: (vsim-3043) /userspace/g/gautam/ECE551/src/BarCode_tb.sv(115): Unresolved reference to 'SMPL_COUNT_MAX' in BCR1.SMPL_COUNT_MAX.
+#         Region: :BarCode_tb
+# Error loading design
+# Compile of BarCode_tb.sv was successful.
+vsim work.BarCode_tb
+# vsim work.BarCode_tb 
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# Loading work.barcode_mimic
+add wave -position insertpoint  \
+sim/:BarCode_tb:clk \
+sim/:BarCode_tb:rst_n \
+sim/:BarCode_tb:period \
+sim/:BarCode_tb:send \
+sim/:BarCode_tb:station_ID \
+sim/:BarCode_tb:BC \
+sim/:BarCode_tb:BC_done \
+sim/:BarCode_tb:clr_ID_vld \
+sim/:BarCode_tb:ID \
+sim/:BarCode_tb:ID_vld
+run -all
+# Invalid ID
+# ** Note: $stop    : /userspace/g/gautam/ECE551/src/BarCode_tb.sv(36)
+#    Time: 111114 ps  Iteration: 2  Instance: :BarCode_tb
+# Break in Module BarCode_tb at /userspace/g/gautam/ECE551/src/BarCode_tb.sv line 36
+# Compile of barcode.sv was successful.
+# Compile of BarCode_tb.sv was successful.
+# Compile of barcode_mimic.sv was successful.
+# 3 compiles, 0 failed with no errors. 
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# Loading work.barcode_mimic
+run -all
+# Invalid ID
+# ** Note: $stop    : /userspace/g/gautam/ECE551/src/BarCode_tb.sv(36)
+#    Time: 111114 ps  Iteration: 2  Instance: :BarCode_tb
+# Break in Module BarCode_tb at /userspace/g/gautam/ECE551/src/BarCode_tb.sv line 36
+add wave -position insertpoint  \
+sim/:BarCode_tb:BCR1:BC \
+sim/:BarCode_tb:BCR1:clr_ID_vld \
+sim/:BarCode_tb:BCR1:clk \
+sim/:BarCode_tb:BCR1:rst_n \
+sim/:BarCode_tb:BCR1:ID \
+sim/:BarCode_tb:BCR1:ID_vld \
+sim/:BarCode_tb:BCR1:BC_floped \
+sim/:BarCode_tb:BCR1:bc_1 \
+sim/:BarCode_tb:BCR1:bc_2 \
+sim/:BarCode_tb:BCR1:bc_3 \
+sim/:BarCode_tb:BCR1:bc_4 \
+sim/:BarCode_tb:BCR1:load_strt_cnt \
+sim/:BarCode_tb:BCR1:strt_cnt \
+sim/:BarCode_tb:BCR1:start_counter \
+sim/:BarCode_tb:BCR1:load \
+sim/:BarCode_tb:BCR1:shift \
+sim/:BarCode_tb:BCR1:bit_cnt \
+sim/:BarCode_tb:BCR1:baud_cnt \
+sim/:BarCode_tb:BCR1:ID_done \
+sim/:BarCode_tb:BCR1:ID_shft_reg \
+sim/:BarCode_tb:BCR1:recving \
+sim/:BarCode_tb:BCR1:bc_neg \
+sim/:BarCode_tb:BCR1:set \
+sim/:BarCode_tb:BCR1:clr \
+sim/:BarCode_tb:BCR1:bc_f \
+sim/:BarCode_tb:BCR1:bit_cnt_val \
+sim/:BarCode_tb:BCR1:start_counter_val \
+sim/:BarCode_tb:BCR1:baud_cnt_val \
+sim/:BarCode_tb:BCR1:ID_shft_reg_val \
+sim/:BarCode_tb:BCR1:state \
+sim/:BarCode_tb:BCR1:next_state
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# Loading work.barcode_mimic
+run -all
+# Invalid ID
+# ** Note: $stop    : /userspace/g/gautam/ECE551/src/BarCode_tb.sv(36)
+#    Time: 111114 ps  Iteration: 2  Instance: :BarCode_tb
+# Break in Module BarCode_tb at /userspace/g/gautam/ECE551/src/BarCode_tb.sv line 36
+# Compile of barcode.sv was successful.
+# Compile of BarCode_tb.sv was successful.
+# Compile of barcode_mimic.sv was successful.
+# 3 compiles, 0 failed with no errors. 
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# Loading work.barcode_mimic
+run -all
+# Received the correct data
+# ID_vld is asserting properly
+# ID_vld is not knocked down by the clr_ID_vld signal
+# ** Note: $stop    : /userspace/g/gautam/ECE551/src/BarCode_tb.sv(48)
+#    Time: 111124 ps  Iteration: 0  Instance: :BarCode_tb
+# Break in Module BarCode_tb at /userspace/g/gautam/ECE551/src/BarCode_tb.sv line 48
+quit -sim
+vsim work.BarCode_tb
+# vsim work.BarCode_tb 
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# Loading work.barcode_mimic
+# Compile of barcode.sv was successful.
+# Compile of BarCode_tb.sv was successful.
+# Compile of barcode_mimic.sv was successful.
+# 3 compiles, 0 failed with no errors. 
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# Loading work.barcode_mimic
+add wave -position insertpoint  \
+sim/:BarCode_tb:clk \
+sim/:BarCode_tb:rst_n \
+sim/:BarCode_tb:period \
+sim/:BarCode_tb:send \
+sim/:BarCode_tb:station_ID \
+sim/:BarCode_tb:BC \
+sim/:BarCode_tb:BC_done \
+sim/:BarCode_tb:clr_ID_vld \
+sim/:BarCode_tb:ID \
+sim/:BarCode_tb:ID_vld
+add wave -position insertpoint  \
+sim/:BarCode_tb:BCR1:BC \
+sim/:BarCode_tb:BCR1:clr_ID_vld \
+sim/:BarCode_tb:BCR1:clk \
+sim/:BarCode_tb:BCR1:rst_n \
+sim/:BarCode_tb:BCR1:ID \
+sim/:BarCode_tb:BCR1:ID_vld \
+sim/:BarCode_tb:BCR1:BC_floped \
+sim/:BarCode_tb:BCR1:bc_1 \
+sim/:BarCode_tb:BCR1:bc_2 \
+sim/:BarCode_tb:BCR1:bc_3 \
+sim/:BarCode_tb:BCR1:bc_4 \
+sim/:BarCode_tb:BCR1:load_strt_cnt \
+sim/:BarCode_tb:BCR1:strt_cnt \
+sim/:BarCode_tb:BCR1:start_counter \
+sim/:BarCode_tb:BCR1:load \
+sim/:BarCode_tb:BCR1:shift \
+sim/:BarCode_tb:BCR1:bit_cnt \
+sim/:BarCode_tb:BCR1:baud_cnt \
+sim/:BarCode_tb:BCR1:ID_done \
+sim/:BarCode_tb:BCR1:ID_shft_reg \
+sim/:BarCode_tb:BCR1:recving \
+sim/:BarCode_tb:BCR1:bc_neg \
+sim/:BarCode_tb:BCR1:set \
+sim/:BarCode_tb:BCR1:clr \
+sim/:BarCode_tb:BCR1:bc_f \
+sim/:BarCode_tb:BCR1:bit_cnt_val \
+sim/:BarCode_tb:BCR1:start_counter_val \
+sim/:BarCode_tb:BCR1:baud_cnt_val \
+sim/:BarCode_tb:BCR1:ID_shft_reg_val \
+sim/:BarCode_tb:BCR1:state \
+sim/:BarCode_tb:BCR1:next_state
+run -all
+# Received the correct data
+# ID_vld is knocked down. Good Work!!
+# Second Data also received correctly
+# Invalid ID
+# ** Note: $stop    : /userspace/g/gautam/ECE551/src/BarCode_tb.sv(83)
+#    Time: 368506 ps  Iteration: 2  Instance: :BarCode_tb
+# Break in Module BarCode_tb at /userspace/g/gautam/ECE551/src/BarCode_tb.sv line 83
+add wave  \
+sim/:BarCode_tb:BCM1:BC_done
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# Loading work.barcode_mimic
+run -all
+# Received the correct data
+# ID_vld is knocked down. Good Work!!
+# Second Data also received correctly
+# Invalid ID
+# ** Note: $stop    : /userspace/g/gautam/ECE551/src/BarCode_tb.sv(83)
+#    Time: 368506 ps  Iteration: 2  Instance: :BarCode_tb
+# Break in Module BarCode_tb at /userspace/g/gautam/ECE551/src/BarCode_tb.sv line 83
+quit -sim
+# Compile of bc_tb.sv was successful.
+vsim work.barcode_tb
+# vsim work.barcode_tb 
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode_tb
+# Loading work.barcode_mimic
+# Loading work.barcode
+add wave -position insertpoint  \
+sim/:barcode_tb:clk \
+sim/:barcode_tb:rst_n \
+sim/:barcode_tb:send \
+sim/:barcode_tb:station_ID \
+sim/:barcode_tb:period \
+sim/:barcode_tb:clr_ID_vld \
+sim/:barcode_tb:ID_vld \
+sim/:barcode_tb:BC_done \
+sim/:barcode_tb:BC \
+sim/:barcode_tb:ID
+run -all
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode_tb
+# Loading work.barcode_mimic
+# Loading work.barcode
+run -all
+run
+run
+run
+run
+run
+# Error: test failed, expected 21
+# ** Note: $stop    : /userspace/g/gautam/Questa_ECE551/bc_tb.sv(34)
+#    Time: 106897175 ps  Iteration: 2  Instance: :barcode_tb
+# Break in Module barcode_tb at /userspace/g/gautam/Questa_ECE551/bc_tb.sv line 34
+run
+# Error: test failed, expected 23
+# ** Note: $stop    : /userspace/g/gautam/Questa_ECE551/bc_tb.sv(34)
+#    Time: 113178565 ps  Iteration: 2  Instance: :barcode_tb
+# Break in Module barcode_tb at /userspace/g/gautam/Questa_ECE551/bc_tb.sv line 34
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode_tb
+# Loading work.barcode_mimic
+# Loading work.barcode
+run -all
+add wave -position insertpoint  \
+sim/:barcode_tb:U2:BC \
+sim/:barcode_tb:U2:clr_ID_vld \
+sim/:barcode_tb:U2:clk \
+sim/:barcode_tb:U2:rst_n \
+sim/:barcode_tb:U2:ID \
+sim/:barcode_tb:U2:ID_vld \
+sim/:barcode_tb:U2:BC_floped \
+sim/:barcode_tb:U2:bc_1 \
+sim/:barcode_tb:U2:bc_2 \
+sim/:barcode_tb:U2:bc_3 \
+sim/:barcode_tb:U2:bc_4 \
+sim/:barcode_tb:U2:load_strt_cnt \
+sim/:barcode_tb:U2:strt_cnt \
+sim/:barcode_tb:U2:start_counter \
+sim/:barcode_tb:U2:load \
+sim/:barcode_tb:U2:shift \
+sim/:barcode_tb:U2:bit_cnt \
+sim/:barcode_tb:U2:baud_cnt \
+sim/:barcode_tb:U2:ID_done \
+sim/:barcode_tb:U2:ID_shft_reg \
+sim/:barcode_tb:U2:recving \
+sim/:barcode_tb:U2:bc_neg \
+sim/:barcode_tb:U2:set \
+sim/:barcode_tb:U2:clr \
+sim/:barcode_tb:U2:bc_f \
+sim/:barcode_tb:U2:bit_cnt_val \
+sim/:barcode_tb:U2:start_counter_val \
+sim/:barcode_tb:U2:baud_cnt_val \
+sim/:barcode_tb:U2:ID_shft_reg_val \
+sim/:barcode_tb:U2:state \
+sim/:barcode_tb:U2:next_state
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode_tb
+# Loading work.barcode_mimic
+# Loading work.barcode
+run -all
+quit -sim
+# Compile of barcode.sv was successful.
+vsim work.barcode_tb
+# vsim work.barcode_tb 
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.barcode_tb
+# Loading work.barcode_mimic
+# Loading work.barcode
+add wave -position insertpoint  \
+sim/:barcode_tb:clk \
+sim/:barcode_tb:rst_n \
+sim/:barcode_tb:send \
+sim/:barcode_tb:station_ID \
+sim/:barcode_tb:period \
+sim/:barcode_tb:clr_ID_vld \
+sim/:barcode_tb:ID_vld \
+sim/:barcode_tb:BC_done \
+sim/:barcode_tb:BC \
+sim/:barcode_tb:ID
+run -all
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+run -all
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# Yahoo test passed!
+# ** Note: $stop    : /userspace/g/gautam/Questa_ECE551/bc_tb.sv(49)
+#    Time: 220133690 ps  Iteration: 1  Instance: :barcode_tb
+# Break in Module barcode_tb at /userspace/g/gautam/Questa_ECE551/bc_tb.sv line 49
+vsim work.BarCode_tb
+# vsim work.BarCode_tb 
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# Loading work.barcode_mimic
+add wave -position insertpoint  \
+sim/:BarCode_tb:clk \
+sim/:BarCode_tb:rst_n \
+sim/:BarCode_tb:period \
+sim/:BarCode_tb:send \
+sim/:BarCode_tb:station_ID \
+sim/:BarCode_tb:BC \
+sim/:BarCode_tb:BC_done \
+sim/:BarCode_tb:clr_ID_vld \
+sim/:BarCode_tb:ID \
+sim/:BarCode_tb:ID_vld
+run -all
+# Received the correct data
+# ID_vld is asserting properly
+# ID_vld is knocked down. Good Work!!
+# Invalid ID
+# ** Note: $stop    : /userspace/g/gautam/ECE551/src/BarCode_tb.sv(65)
+#    Time: 221474 ps  Iteration: 2  Instance: :BarCode_tb
+# Break in Module BarCode_tb at /userspace/g/gautam/ECE551/src/BarCode_tb.sv line 65
+add wave -position insertpoint  \
+sim/:BarCode_tb:BCR1:BC \
+sim/:BarCode_tb:BCR1:clr_ID_vld \
+sim/:BarCode_tb:BCR1:clk \
+sim/:BarCode_tb:BCR1:rst_n \
+sim/:BarCode_tb:BCR1:ID \
+sim/:BarCode_tb:BCR1:ID_vld \
+sim/:BarCode_tb:BCR1:BC_floped \
+sim/:BarCode_tb:BCR1:bc_1 \
+sim/:BarCode_tb:BCR1:bc_2 \
+sim/:BarCode_tb:BCR1:bc_3 \
+sim/:BarCode_tb:BCR1:bc_4 \
+sim/:BarCode_tb:BCR1:load_strt_cnt \
+sim/:BarCode_tb:BCR1:strt_cnt \
+sim/:BarCode_tb:BCR1:start_counter \
+sim/:BarCode_tb:BCR1:load \
+sim/:BarCode_tb:BCR1:shift \
+sim/:BarCode_tb:BCR1:bit_cnt \
+sim/:BarCode_tb:BCR1:baud_cnt \
+sim/:BarCode_tb:BCR1:ID_done \
+sim/:BarCode_tb:BCR1:ID_shft_reg \
+sim/:BarCode_tb:BCR1:recving \
+sim/:BarCode_tb:BCR1:bc_neg \
+sim/:BarCode_tb:BCR1:set \
+sim/:BarCode_tb:BCR1:clr \
+sim/:BarCode_tb:BCR1:bc_f \
+sim/:BarCode_tb:BCR1:bit_cnt_val \
+sim/:BarCode_tb:BCR1:start_counter_val \
+sim/:BarCode_tb:BCR1:baud_cnt_val \
+sim/:BarCode_tb:BCR1:ID_shft_reg_val \
+sim/:BarCode_tb:BCR1:state \
+sim/:BarCode_tb:BCR1:next_state
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.BarCode_tb
+# Loading work.barcode
+# Loading work.barcode_mimic
+run -all
+# Received the correct data
+# ID_vld is asserting properly
+# ID_vld is knocked down. Good Work!!
+# Invalid ID
+# ** Note: $stop    : /userspace/g/gautam/ECE551/src/BarCode_tb.sv(65)
+#    Time: 221474 ps  Iteration: 2  Instance: :BarCode_tb
+# Break in Module BarCode_tb at /userspace/g/gautam/ECE551/src/BarCode_tb.sv line 65
+run
+# Invalid ID
+# ** Note: $stop    : /userspace/g/gautam/ECE551/src/BarCode_tb.sv(83)
+#    Time: 368506 ps  Iteration: 2  Instance: :BarCode_tb
+# Break in Module BarCode_tb at /userspace/g/gautam/ECE551/src/BarCode_tb.sv line 83

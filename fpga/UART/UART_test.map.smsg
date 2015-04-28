@@ -1,0 +1,5 @@
+Info (10281): Verilog HDL Declaration information at reset_synch.v(3): object "RST_n" differs only in case from object "rst_n" in the same scope
+Info (10281): Verilog HDL Declaration information at UartTx.v(10): object "load" differs only in case from object "LOAD" in the same scope
+Info (10281): Verilog HDL Declaration information at UartTx.v(4): object "trmt" differs only in case from object "TRMT" in the same scope
+Info (10281): Verilog HDL Declaration information at UartRx.sv(12): object "LOAD" differs only in case from object "load" in the same scope
+Info (10281): Verilog HDL Declaration information at UART_test.v(3): object "RST_n" differs only in case from object "rst_n" in the same scope

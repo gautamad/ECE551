@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Apr 14 01:18:02 2015
+Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : FirstFPGA
+Top-level Entity Name : LEDBlinkFPGA
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 17 / 22,320 ( < 1 % )
+    Total combinational functions : 17 / 22,320 ( < 1 % )
+    Dedicated logic registers : 13 / 22,320 ( < 1 % )
+Total registers : 13
+Total pins : 10 / 154 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

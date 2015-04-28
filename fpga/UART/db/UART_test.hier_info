@@ -1,0 +1,243 @@
+|UART_test
+clk => clk.IN4
+RST_n => RST_n.IN1
+next_byte => next_byte.IN1
+LEDs[0] <= UartRx:iUART_rcv.cmd
+LEDs[1] <= UartRx:iUART_rcv.cmd
+LEDs[2] <= UartRx:iUART_rcv.cmd
+LEDs[3] <= UartRx:iUART_rcv.cmd
+LEDs[4] <= UartRx:iUART_rcv.cmd
+LEDs[5] <= UartRx:iUART_rcv.cmd
+LEDs[6] <= UartRx:iUART_rcv.cmd
+LEDs[7] <= UartRx:iUART_rcv.cmd
+
+
+|UART_test|reset_synch:iRST
+RST_n => rst_n~reg0.ALOAD
+RST_n => q0.ACLR
+clk => rst_n~reg0.CLK
+clk => q0.CLK
+rst_n <= rst_n~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UART_test|button_smpl:iButton_smpl
+clk => q2.CLK
+clk => q1.CLK
+clk => q0.CLK
+preset_n => q2.PRESET
+preset_n => q1.PRESET
+preset_n => q0.PRESET
+next_byte => q0.DATAIN
+button_rise_edge <= button_rise_edge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UART_test|UartTx:iUart_Tx
+clk => clk.IN3
+rst_n => rst_n.IN1
+TX <= TX.DB_MAX_OUTPUT_PORT_TYPE
+trmt => next_state.DATAA
+trmt => next_state.DATAA
+tx_data[0] => tx_data[0].IN1
+tx_data[1] => tx_data[1].IN1
+tx_data[2] => tx_data[2].IN1
+tx_data[3] => tx_data[3].IN1
+tx_data[4] => tx_data[4].IN1
+tx_data[5] => tx_data[5].IN1
+tx_data[6] => tx_data[6].IN1
+tx_data[7] => tx_data[7].IN1
+tx_done <= tx_done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UART_test|UartTx:iUart_Tx|shift_register:shiftreg
+clk => regData[0].CLK
+clk => regData[1].CLK
+clk => regData[2].CLK
+clk => regData[3].CLK
+clk => regData[4].CLK
+clk => regData[5].CLK
+clk => regData[6].CLK
+clk => regData[7].CLK
+clk => regData[8].CLK
+clk => regData[9].CLK
+TX <= regData[0].DB_MAX_OUTPUT_PORT_TYPE
+rst_n => regData[0].PRESET
+rst_n => regData[1].PRESET
+rst_n => regData[2].PRESET
+rst_n => regData[3].PRESET
+rst_n => regData[4].PRESET
+rst_n => regData[5].PRESET
+rst_n => regData[6].PRESET
+rst_n => regData[7].PRESET
+rst_n => regData[8].PRESET
+rst_n => regData[9].PRESET
+tx_data[0] => regData.DATAB
+tx_data[1] => regData.DATAB
+tx_data[2] => regData.DATAB
+tx_data[3] => regData.DATAB
+tx_data[4] => regData.DATAB
+tx_data[5] => regData.DATAB
+tx_data[6] => regData.DATAB
+tx_data[7] => regData.DATAB
+load => regData.OUTPUTSELECT
+load => regData.OUTPUTSELECT
+load => regData.OUTPUTSELECT
+load => regData.OUTPUTSELECT
+load => regData.OUTPUTSELECT
+load => regData.OUTPUTSELECT
+load => regData.OUTPUTSELECT
+load => regData.OUTPUTSELECT
+load => regData.OUTPUTSELECT
+load => regData.OUTPUTSELECT
+shift => regData.OUTPUTSELECT
+shift => regData.OUTPUTSELECT
+shift => regData.OUTPUTSELECT
+shift => regData.OUTPUTSELECT
+shift => regData.OUTPUTSELECT
+shift => regData.OUTPUTSELECT
+shift => regData.OUTPUTSELECT
+shift => regData.OUTPUTSELECT
+shift => regData.OUTPUTSELECT
+shift => regData.OUTPUTSELECT
+
+
+|UART_test|UartTx:iUart_Tx|baud_counter:baudcnt
+clk => baud_cnt[0].CLK
+clk => baud_cnt[1].CLK
+clk => baud_cnt[2].CLK
+clk => baud_cnt[3].CLK
+clk => baud_cnt[4].CLK
+clk => baud_cnt[5].CLK
+clk => baud_cnt[6].CLK
+clk => baud_cnt[7].CLK
+clk => baud_cnt[8].CLK
+clk => baud_cnt[9].CLK
+clk => baud_cnt[10].CLK
+clk => baud_cnt[11].CLK
+load => baud_cnt_val[11].OUTPUTSELECT
+load => baud_cnt_val[10].OUTPUTSELECT
+load => baud_cnt_val[9].OUTPUTSELECT
+load => baud_cnt_val[8].OUTPUTSELECT
+load => baud_cnt_val[7].OUTPUTSELECT
+load => baud_cnt_val[6].OUTPUTSELECT
+load => baud_cnt_val[5].OUTPUTSELECT
+load => baud_cnt_val[4].OUTPUTSELECT
+load => baud_cnt_val[3].OUTPUTSELECT
+load => baud_cnt_val[2].OUTPUTSELECT
+load => baud_cnt_val[1].OUTPUTSELECT
+load => baud_cnt_val[0].OUTPUTSELECT
+rst_n => baud_cnt[0].ACLR
+rst_n => baud_cnt[1].ACLR
+rst_n => baud_cnt[2].ACLR
+rst_n => baud_cnt[3].ACLR
+rst_n => baud_cnt[4].ACLR
+rst_n => baud_cnt[5].ACLR
+rst_n => baud_cnt[6].ACLR
+rst_n => baud_cnt[7].ACLR
+rst_n => baud_cnt[8].ACLR
+rst_n => baud_cnt[9].ACLR
+rst_n => baud_cnt[10].ACLR
+rst_n => baud_cnt[11].ACLR
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+transmitting => baud_cnt_val.OUTPUTSELECT
+shift_reg <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UART_test|UartTx:iUart_Tx|bit_counter:bitcnt
+clk => bit_cnt[0]~reg0.CLK
+clk => bit_cnt[1]~reg0.CLK
+clk => bit_cnt[2]~reg0.CLK
+clk => bit_cnt[3]~reg0.CLK
+load => bit_cnt.OUTPUTSELECT
+load => bit_cnt.OUTPUTSELECT
+load => bit_cnt.OUTPUTSELECT
+load => bit_cnt.OUTPUTSELECT
+shift => bit_cnt.OUTPUTSELECT
+shift => bit_cnt.OUTPUTSELECT
+shift => bit_cnt.OUTPUTSELECT
+shift => bit_cnt.OUTPUTSELECT
+bit_cnt[0] <= bit_cnt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bit_cnt[1] <= bit_cnt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bit_cnt[2] <= bit_cnt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bit_cnt[3] <= bit_cnt[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UART_test|UartRx:iUART_rcv
+rdy <= rdy~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cmd[0] <= rx_shft_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+cmd[1] <= rx_shft_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+cmd[2] <= rx_shft_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+cmd[3] <= rx_shft_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+cmd[4] <= rx_shft_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+cmd[5] <= rx_shft_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+cmd[6] <= rx_shft_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+cmd[7] <= rx_shft_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+clr_rdy => always2.IN1
+clk => rdy~reg0.CLK
+clk => rx_shft_reg[0].CLK
+clk => rx_shft_reg[1].CLK
+clk => rx_shft_reg[2].CLK
+clk => rx_shft_reg[3].CLK
+clk => rx_shft_reg[4].CLK
+clk => rx_shft_reg[5].CLK
+clk => rx_shft_reg[6].CLK
+clk => rx_shft_reg[7].CLK
+clk => rx_shft_reg[8].CLK
+clk => baud_cnt[0].CLK
+clk => baud_cnt[1].CLK
+clk => baud_cnt[2].CLK
+clk => baud_cnt[3].CLK
+clk => baud_cnt[4].CLK
+clk => baud_cnt[5].CLK
+clk => baud_cnt[6].CLK
+clk => baud_cnt[7].CLK
+clk => baud_cnt[8].CLK
+clk => baud_cnt[9].CLK
+clk => baud_cnt[10].CLK
+clk => baud_cnt[11].CLK
+clk => bit_cnt[0].CLK
+clk => bit_cnt[1].CLK
+clk => bit_cnt[2].CLK
+clk => bit_cnt[3].CLK
+clk => fRX.CLK
+clk => iRX.CLK
+clk => state~1.DATAIN
+rst_n => rdy~reg0.ACLR
+rst_n => rx_shft_reg[0].ACLR
+rst_n => rx_shft_reg[1].ACLR
+rst_n => rx_shft_reg[2].ACLR
+rst_n => rx_shft_reg[3].ACLR
+rst_n => rx_shft_reg[4].ACLR
+rst_n => rx_shft_reg[5].ACLR
+rst_n => rx_shft_reg[6].ACLR
+rst_n => rx_shft_reg[7].ACLR
+rst_n => rx_shft_reg[8].ACLR
+rst_n => baud_cnt[0].ACLR
+rst_n => baud_cnt[1].PRESET
+rst_n => baud_cnt[2].ACLR
+rst_n => baud_cnt[3].ACLR
+rst_n => baud_cnt[4].ACLR
+rst_n => baud_cnt[5].ACLR
+rst_n => baud_cnt[6].PRESET
+rst_n => baud_cnt[7].ACLR
+rst_n => baud_cnt[8].PRESET
+rst_n => baud_cnt[9].PRESET
+rst_n => baud_cnt[10].PRESET
+rst_n => baud_cnt[11].PRESET
+rst_n => bit_cnt[0].ACLR
+rst_n => bit_cnt[1].ACLR
+rst_n => bit_cnt[2].ACLR
+rst_n => bit_cnt[3].ACLR
+rst_n => state~3.DATAIN
+RX => iRX.DATAIN
+
+

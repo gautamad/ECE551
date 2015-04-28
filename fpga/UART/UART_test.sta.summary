@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.439
+TNS   : -160.416
+
+Type  : Slow 1200mV 85C Model Setup 'UartTx:iUart_Tx|state.TRMT'
+Slack : -2.429
+TNS   : -2.429
+
+Type  : Slow 1200mV 85C Model Setup 'RST_n'
+Slack : -1.653
+TNS   : -1.653
+
+Type  : Slow 1200mV 85C Model Setup 'UartTx:iUart_Tx|state.IDLE'
+Slack : -0.313
+TNS   : -0.313
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'UartTx:iUart_Tx|state.IDLE'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'RST_n'
+Slack : 1.351
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'UartTx:iUart_Tx|state.TRMT'
+Slack : 2.222
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -2.173
+TNS   : -103.669
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -76.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RST_n'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UartTx:iUart_Tx|state.IDLE'
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UartTx:iUart_Tx|state.TRMT'
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.014
+TNS   : -138.345
+
+Type  : Slow 1200mV 0C Model Setup 'UartTx:iUart_Tx|state.TRMT'
+Slack : -2.078
+TNS   : -2.078
+
+Type  : Slow 1200mV 0C Model Setup 'RST_n'
+Slack : -1.395
+TNS   : -1.395
+
+Type  : Slow 1200mV 0C Model Setup 'UartTx:iUart_Tx|state.IDLE'
+Slack : -0.244
+TNS   : -0.244
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'UartTx:iUart_Tx|state.IDLE'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'RST_n'
+Slack : 1.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'UartTx:iUart_Tx|state.TRMT'
+Slack : 2.012
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -1.937
+TNS   : -91.802
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 0.274
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -76.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RST_n'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UartTx:iUart_Tx|state.IDLE'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UartTx:iUart_Tx|state.TRMT'
+Slack : 0.487
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.413
+TNS   : -66.179
+
+Type  : Fast 1200mV 0C Model Setup 'RST_n'
+Slack : -1.200
+TNS   : -1.200
+
+Type  : Fast 1200mV 0C Model Setup 'UartTx:iUart_Tx|state.TRMT'
+Slack : -0.866
+TNS   : -0.866
+
+Type  : Fast 1200mV 0C Model Setup 'UartTx:iUart_Tx|state.IDLE'
+Slack : 0.073
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'UartTx:iUart_Tx|state.IDLE'
+Slack : 0.105
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.113
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'UartTx:iUart_Tx|state.TRMT'
+Slack : 1.167
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'RST_n'
+Slack : 1.435
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -1.411
+TNS   : -66.584
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -96.407
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RST_n'
+Slack : -3.000
+TNS   : -3.304
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UartTx:iUart_Tx|state.IDLE'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UartTx:iUart_Tx|state.TRMT'
+Slack : 0.492
+TNS   : 0.000
+
+------------------------------------------------------------

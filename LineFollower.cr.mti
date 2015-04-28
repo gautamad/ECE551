@@ -1,87 +1,147 @@
-I:/ECE551~2/src/add4bit.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/add4bit.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+/userspace/g/gautam/ECE551/src/UartTb.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/UartTb.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module UART_rx_tb
+
+Top level modules:
+	UART_rx_tb
+
+} {} {}} /userspace/g/gautam/ECE551/src/ALU.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/ALU.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module ALU
+** Warning: /userspace/g/gautam/ECE551/src/ALU.v(8): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
+** Warning: /userspace/g/gautam/ECE551/src/ALU.v(9): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
+
+Top level modules:
+	ALU
+
+} {} {}} /userspace/g/gautam/ECE551/src/LEDBlinkFPGA.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/LEDBlinkFPGA.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module LEDBlinkFPGA
+
+Top level modules:
+	LEDBlinkFPGA
+
+} {} {}} /userspace/g/gautam/ECE551/src/FullAdder.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/FullAdder.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module FA
+-- Compiling module add8bit
+
+Top level modules:
+	add8bit
+
+} {} {}} /userspace/g/gautam/ECE551/src/barcode.sv {2 {vlog -work work -vopt -sv /userspace/g/gautam/ECE551/src/barcode.sv
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module barcode
+
+Top level modules:
+	barcode
+
+} {} {}} /userspace/g/gautam/ECE551/src/add4bit.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/add4bit.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
 -- Compiling module add4bit
 -- Compiling module add4bit_tb
 
 Top level modules:
 	add4bit_tb
 
-} {} {}} I:/ECE551~2/src/motor_driver.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/motor_driver.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module motor_driver
--- Compiling module moto_driver_tb
-
-Top level modules:
-	moto_driver_tb
-
-} {} {}} I:/ECE551~2/src/Mul.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/Mul.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+} {} {}} /userspace/g/gautam/ECE551/src/Mul.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/Mul.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
 -- Compiling module Mul
 
 Top level modules:
 	Mul
 
-} {} {}} I:/ECE551~2/src/simple_cnt.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/simple_cnt.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module simple_cnt
+} {} {}} /userspace/g/gautam/ECE551/src/UartTx.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/UartTx.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module UartTx
+-- Compiling module shift_register
+-- Compiling module baud_counter
+-- Compiling module bit_counter
 
 Top level modules:
-	simple_cnt
+	UartTx
 
-} {} {}} I:/ECE551~2/src/Oscillating.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/Oscillating.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+} {} {}} /userspace/g/gautam/ECE551/src/BarCode_tb.sv {2 {vlog -work work -vopt -sv /userspace/g/gautam/ECE551/src/BarCode_tb.sv
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module BarCode_tb
+
+Top level modules:
+	BarCode_tb
+
+} {} {}} /userspace/g/gautam/ECE551/src/UartRx.sv {2 {vlog -work work -vopt -sv /userspace/g/gautam/ECE551/src/UartRx.sv
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module UartRx
+
+Top level modules:
+	UartRx
+
+} {} {}} /userspace/g/gautam/ECE551/src/Oscillating.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/Oscillating.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
 -- Compiling module osc
 -- Compiling module osc_tb
 
 Top level modules:
 	osc_tb
 
-} {} {}} I:/ECE551~2/src/LEDBlinkFPGA.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/LEDBlinkFPGA.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module LEDBlinkFPGA
+} {} {}} /userspace/g/gautam/ECE551/src/barcode_mimic.sv {2 {vlog -work work -vopt -sv /userspace/g/gautam/ECE551/src/barcode_mimic.sv
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module barcode_mimic
 
 Top level modules:
-	LEDBlinkFPGA
+	barcode_mimic
 
-} {} {}} I:/ECE551~2/src/PWM.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/PWM.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+} {} {}} /userspace/g/gautam/ECE551/src/PWM.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/PWM.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
 -- Compiling module PWM
 -- Compiling module PWM_tb
 
 Top level modules:
 	PWM_tb
 
-} {} {}} I:/ECE551~2/src/FirstFPGA.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/FirstFPGA.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+} {} {}} /userspace/g/gautam/ECE551/src/motor_driver.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/motor_driver.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module motor_driver
+-- Compiling module moto_driver_tb
+
+Top level modules:
+	moto_driver_tb
+
+} {} {}} /userspace/g/gautam/ECE551/src/simple_cnt.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/simple_cnt.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
+-- Compiling module simple_cnt
+
+Top level modules:
+	simple_cnt
+
+} {} {}} /userspace/g/gautam/ECE551/src/FirstFPGA.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/FirstFPGA.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
 -- Compiling module FirstFPGA
 
 Top level modules:
 	FirstFPGA
 
-} {} {}} I:/ECE551~2/src/reset_synch.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/reset_synch.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+} {} {}} /userspace/g/gautam/ECE551/src/reset_synch.v {2 {vlog -work work -vopt /userspace/g/gautam/ECE551/src/reset_synch.v
+Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+** Warning: (vlog-98) "/cae/apps/data/mentor-2013/libs/MS/OS/aol/libadmslib_64.so" is not present; ADMS design-units may not be handled properly
 -- Compiling module reset_synch
 
 Top level modules:
 	reset_synch
-
-} {} {}} I:/ECE551~2/src/ALU.v {2 {vlog -work work -vopt -stats=none I:/ECE551~2/src/ALU.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module ALU
-** Warning: I:/ECE551~2/src/ALU.v(8): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-
-** Warning: I:/ECE551~2/src/ALU.v(9): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-
-
-Top level modules:
-	ALU
-
-} {} {}} I:/ECE551~2/src/FullAdder.v {1 {vlog -work work -vopt -stats=none I:/ECE551~2/src/FullAdder.v
-Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
--- Compiling module FA
--- Compiling module add8bit
-
-Top level modules:
-	add8bit
 
 } {} {}}
